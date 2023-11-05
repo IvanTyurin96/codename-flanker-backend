@@ -48,12 +48,6 @@ namespace CodenameFlanker.Data.Migrations
                 name: "IX_Image_ArtworkId",
                 table: "Image",
                 column: "ArtworkId");
-
-			migrationBuilder.Sql(@"INSERT INTO Artwork (Id, Name, Thumbnail)
-                                 VALUES (1, 'R-27T', 'R-27T_3.jpg')");
-
-			migrationBuilder.Sql(@"INSERT INTO Image (Path, Description, ArtworkId)
-                                 VALUES ('R-27T_3.jpg', '', 1)");
 		}
 
         /// <inheritdoc />

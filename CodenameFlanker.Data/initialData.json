@@ -1,0 +1,568 @@
+﻿{
+  "Artworks": [
+    {
+      "Id": 1,
+      "Name": "R-27T",
+      "Thumbnail": "R-27T_3.jpg",
+      "Images": [
+        { "Path": "R-27T_1.jpg", "Description": "" },
+        { "Path": "R-27T_2.jpg", "Description": "" },
+        { "Path": "R-27T_4.jpg", "Description": "" },
+        { "Path": "R-27T_5.jpg", "Description": "" },
+        { "Path": "R-27T_6.jpg", "Description": "" },
+        { "Path": "R-27T_7.jpg", "Description": "" },
+        { "Path": "R-27T_8.jpg", "Description": "" },
+        { "Path": "R-27T_9.jpg", "Description": "" },
+        { "Path": "R-27T_10.jpg", "Description": "" },
+        { "Path": "R-27T_11.jpg", "Description": "" },
+        { "Path": "R-27T_12.jpg", "Description": "" },
+        { "Path": "R-27T_13.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian air-to-air missile R-27T. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 6835\nTriangles: 13304"
+    },
+    {
+      "Id": 2,
+      "Name": "R-27P",
+      "Thumbnail": "R-27P_3.jpg",
+      "Images": [
+        { "Path": "R-27P_1.jpg", "Description": "" },
+        { "Path": "R-27P_2.jpg", "Description": "" },
+        { "Path": "R-27P_4.jpg", "Description": "" },
+        { "Path": "R-27P_5.jpg", "Description": "" },
+        { "Path": "R-27P_6.jpg", "Description": "" },
+        { "Path": "R-27P_7.jpg", "Description": "" },
+        { "Path": "R-27P_8.jpg", "Description": "" },
+        { "Path": "R-27P_9.jpg", "Description": "" },
+        { "Path": "R-27P_10.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian air-to-air missile R-27P. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 6715\nTriangles: 13064"
+    },
+    {
+      "Id": 3,
+      "Name": "R-27EP",
+      "Thumbnail": "R-27EP_3.jpg",
+      "Images": [
+        { "Path": "R-27EP_1.jpg", "Description": "" },
+        { "Path": "R-27EP_2.jpg", "Description": "" },
+        { "Path": "R-27EP_4.jpg", "Description": "" },
+        { "Path": "R-27EP_5.jpg", "Description": "" },
+        { "Path": "R-27EP_6.jpg", "Description": "" },
+        { "Path": "R-27EP_7.jpg", "Description": "" },
+        { "Path": "R-27EP_8.jpg", "Description": "" },
+        { "Path": "R-27EP_9.jpg", "Description": "" },
+        { "Path": "R-27EP_10.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian air-to-air missile R-27EP. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 6427\nTriangles: 12524"
+    },
+    {
+      "Id": 4,
+      "Name": "R-27ER",
+      "Thumbnail": "R-27ER_3.jpg",
+      "Images": [
+        { "Path": "R-27ER_1.jpg", "Description": "" },
+        { "Path": "R-27ER_2.jpg", "Description": "" },
+        { "Path": "R-27ER_4.jpg", "Description": "" },
+        { "Path": "R-27ER_5.jpg", "Description": "" },
+        { "Path": "R-27ER_6.jpg", "Description": "" },
+        { "Path": "R-27ER_7.jpg", "Description": "" },
+        { "Path": "R-27ER_8.jpg", "Description": "" },
+        { "Path": "R-27ER_9.jpg", "Description": "" },
+        { "Path": "R-27ER_10.jpg", "Description": "" },
+        { "Path": "R-27ER_11.jpg", "Description": "" },
+        { "Path": "R-27ER_12.jpg", "Description": "" },
+        { "Path": "R-27ER_13.jpg", "Description": "" },
+        { "Path": "R-27ER_14.jpg", "Description": "" },
+        { "Path": "R-27ER_15.jpg", "Description": "" },
+        { "Path": "R-27ER_16.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian air-to-air missile R-27ER. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 7523\nTriangles: 14376"
+    },
+    {
+      "Id": 5,
+      "Name": "R-27R",
+      "Thumbnail": "R-27R_3.jpg",
+      "Images": [
+        { "Path": "R-27R_1.jpg", "Description": "" },
+        { "Path": "R-27R_2.jpg", "Description": "" },
+        { "Path": "R-27R_4.jpg", "Description": "" },
+        { "Path": "R-27R_5.jpg", "Description": "" },
+        { "Path": "R-27R_6.jpg", "Description": "" },
+        { "Path": "R-27R_7.jpg", "Description": "" },
+        { "Path": "R-27R_8.jpg", "Description": "" },
+        { "Path": "R-27R_9.jpg", "Description": "" },
+        { "Path": "R-27R_10.jpg", "Description": "" },
+        { "Path": "R-27R_11.jpg", "Description": "" },
+        { "Path": "R-27R_12.jpg", "Description": "" },
+        { "Path": "R-27R_13.jpg", "Description": "" },
+        { "Path": "R-27R_14.jpg", "Description": "" },
+        { "Path": "R-27R_15.jpg", "Description": "" },
+        { "Path": "R-27R_16.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian air-to-air missile R-27R. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 7815\nTriangles: 14932"
+    },
+    {
+      "Id": 6,
+      "Name": "R-27ET",
+      "Thumbnail": "R-27ET_3.jpg",
+      "Images": [
+        { "Path": "R-27ET_1.jpg", "Description": "" },
+        { "Path": "R-27ET_2.jpg", "Description": "" },
+        { "Path": "R-27ET_4.jpg", "Description": "" },
+        { "Path": "R-27ET_5.jpg", "Description": "" },
+        { "Path": "R-27ET_6.jpg", "Description": "" },
+        { "Path": "R-27ET_7.jpg", "Description": "" },
+        { "Path": "R-27ET_8.jpg", "Description": "" },
+        { "Path": "R-27ET_9.jpg", "Description": "" },
+        { "Path": "R-27ET_10.jpg", "Description": "" },
+        { "Path": "R-27ET_11.jpg", "Description": "" },
+        { "Path": "R-27ET_12.jpg", "Description": "" },
+        { "Path": "R-27ET_13.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian air-to-air missile R-27ET. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 6547\nTriangles: 12764"
+    },
+    {
+      "Id": 7,
+      "Name": "FAB-250 M-62",
+      "Thumbnail": "FAB-250_M-62_3.jpg",
+      "Images": [
+        { "Path": "FAB-250_M-62_1.jpg", "Description": "" },
+        { "Path": "FAB-250_M-62_2.jpg", "Description": "" },
+        { "Path": "FAB-250_M-62_4.jpg", "Description": "" },
+        { "Path": "FAB-250_M-62_5.jpg", "Description": "" },
+        { "Path": "FAB-250_M-62_6.jpg", "Description": "" },
+        { "Path": "FAB-250_M-62_7.jpg", "Description": "" },
+        { "Path": "FAB-250_M-62_8.jpg", "Description": "" },
+        { "Path": "FAB-250_M-62_9.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian unguided bomb FAB-250 M-62. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 2482\nTriangles: 5148"
+    },
+    {
+      "Id": 8,
+      "Name": "FAB-500 M-54",
+      "Thumbnail": "FAB-500_M-54_3.jpg",
+      "Images": [
+        { "Path": "FAB-500_M-54_1.jpg", "Description": "" },
+        { "Path": "FAB-500_M-54_2.jpg", "Description": "" },
+        { "Path": "FAB-500_M-54_4.jpg", "Description": "" },
+        { "Path": "FAB-500_M-54_5.jpg", "Description": "" },
+        { "Path": "FAB-500_M-54_6.jpg", "Description": "" },
+        { "Path": "FAB-500_M-54_7.jpg", "Description": "" },
+        { "Path": "FAB-500_M-54_8.jpg", "Description": "" },
+        { "Path": "FAB-500_M-54_9.jpg", "Description": "" },
+        { "Path": "FAB-500_M-54_10.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian unguided bomb FAB-500 M-54. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 4566\nTriangles: 9368"
+    },
+    {
+      "Id": 9,
+      "Name": "FAB-500 M-62",
+      "Thumbnail": "FAB-500_M-62_3.jpg",
+      "Images": [
+        { "Path": "FAB-500_M-62_1.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_2.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_3.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_4.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_5.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_6.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_7.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_8.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_9.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_10.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62_11.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian unguided bomb FAB-500 M-62. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 3178\nTriangles: 6516"
+    },
+    {
+      "Id": 10,
+      "Name": "OFAB-100-120",
+      "Thumbnail": "OFAB-100-120_3.jpg",
+      "Images": [
+        { "Path": "OFAB-100-120_1.jpg", "Description": "" },
+        { "Path": "OFAB-100-120_2.jpg", "Description": "" },
+        { "Path": "OFAB-100-120_4.jpg", "Description": "" },
+        { "Path": "OFAB-100-120_5.jpg", "Description": "" },
+        { "Path": "OFAB-100-120_6.jpg", "Description": "" },
+        { "Path": "OFAB-100-120_7.jpg", "Description": "" },
+        { "Path": "OFAB-100-120_8.jpg", "Description": "" },
+        { "Path": "OFAB-100-120_9.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian unguided bomb OFAB-100-120. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 3974\nTriangles: 8268"
+    },
+    {
+      "Id": 11,
+      "Name": "OFAB-250-270",
+      "Thumbnail": "OFAB-250-270_3.jpg",
+      "Images": [
+        { "Path": "OFAB-250-270_1.jpg", "Description": "" },
+        { "Path": "OFAB-250-270_2.jpg", "Description": "" },
+        { "Path": "OFAB-250-270_4.jpg", "Description": "" },
+        { "Path": "OFAB-250-270_5.jpg", "Description": "" },
+        { "Path": "OFAB-250-270_6.jpg", "Description": "" },
+        { "Path": "OFAB-250-270_7.jpg", "Description": "" },
+        { "Path": "OFAB-250-270_8.jpg", "Description": "" },
+        { "Path": "OFAB-100-120_9.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian unguided bomb OFAB-250-270. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 4444\nTriangles: 9208"
+    },
+    {
+      "Id": 12,
+      "Name": "Kh-59 Cruise Missiles",
+      "Thumbnail": "Kh-59_thumbnail.jpg",
+      "Images": [
+        { "Path": "Kh-59_1.jpg", "Description": "Kh-59M Front" },
+        { "Path": "Kh-59_2.jpg", "Description": "Kh-59M Side" },
+        { "Path": "Kh-59_3.jpg", "Description": "Kh-59M Rear with Booster separated" },
+        { "Path": "Kh-59_4.jpg", "Description": "Kh-59MK Front" },
+        { "Path": "Kh-59_5.jpg", "Description": "Kh-59MK Side" },
+        { "Path": "Kh-59_6.jpg", "Description": "Kh-59MK2 Front" },
+        { "Path": "Kh-59_7.jpg", "Description": "Kh-59MK2 Rear" },
+        { "Path": "Kh-59_8.jpg", "Description": "APK-9 Datalink Pod Front" },
+        { "Path": "Kh-59_9.jpg", "Description": "APK-9 Datalink Pod Rear" },
+        { "Path": "Kh-59_10.jpg", "Description": "" },
+        { "Path": "Kh-59_11.jpg", "Description": "" },
+        { "Path": "Kh-59_12.jpg", "Description": "" },
+        { "Path": "Kh-59_13.jpg", "Description": "" },
+        { "Path": "Kh-59_14.jpg", "Description": "" },
+        { "Path": "Kh-59_15.jpg", "Description": "" },
+        { "Path": "Kh-59_16.jpg", "Description": "" },
+        { "Path": "Kh-59_17.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Kh-59 cruise missiles. Variants presented:\nKh-59M - TV guided\nKh-59MK - Radar guided\nKh-59MK2 - Land attack variant\n3D Models done in Blender and textures done in Substance Painter.\nThis is a game asset intended for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 13,
+      "Name": "BrahMos Ramjet Supersonic Cruise Missile",
+      "Thumbnail": "BrahMos_thumbnail.jpg",
+      "Images": [
+        { "Path": "BrahMos_1.jpg", "Description": "Front" },
+        { "Path": "BrahMos_2.jpg", "Description": "Rear" },
+        { "Path": "BrahMos_3.jpg", "Description": "Front Cap Removed. Ram Intake visible" },
+        { "Path": "BrahMos_4.jpg", "Description": "Booster section separated" },
+        { "Path": "BrahMos_5.jpg", "Description": "" },
+        { "Path": "BrahMos_6.jpg", "Description": "" },
+        { "Path": "BrahMos_7.jpg", "Description": "" },
+        { "Path": "BrahMos_8.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "BrahMos Ramjet Supersonic Cruise Missile. Can be launched from Submarine, Warship, Aircraft or Land. It is one of the fastest supersonic cruise missiles in the world. Textures done in Substance Painter.\nThis is a game asset intended for DCS World Community Su-30 Mod. 3D Model was provided by Community member A_Tactical_Catto. His link:\n<a className='link-primary' href='https://mdjahinhossain.artstation.com/'>https://mdjahinhossain.artstation.com/</a>\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 14,
+      "Name": "Su-30SM UFC",
+      "Thumbnail": "Su-30SM_UFC_thumbnail.jpg",
+      "Images": [{ "Path": "Su-30SM_UFC_1.jpg", "Description": "" }],
+      "ArtistId": 2,
+      "Description": "UFC (Up Front Controller) module for Sukhoi Su-30SM Aircraft. Textures done in Substance Painter.\nThis is a game asset intended for DCS World Community Su-30 Mod. 3D Model was provided by team member Freebird.\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 15,
+      "Name": "SURA HMD for Su-30",
+      "Thumbnail": "Su-30_SURA_HMD_thumbnail.jpg",
+      "Images": [{ "Path": "Su-30_SURA_HMD_1.jpg", "Description": "" }],
+      "ArtistId": 2,
+      "Description": "SURA Helmet mounted aiming system. Can be mounted on ZSh-7 or later versions of Russian helmets. Textures done in Substance Painter.\nThis is a game asset intended for DCS World Community Su-30 Mod. 3D Model was provided by team member Neoshot. His link:\n<a className='link-primary' href='https://neoshot.artstation.com/'>https://neoshot.artstation.com/</a>\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 16,
+      "Name": "MSA Gallet LA100 Helmet",
+      "Thumbnail": "MSA_Gallet_LA100_Helmet_thumbnail.jpg",
+      "Images": [
+        { "Path": "MSA_Gallet_LA100_Helmet_1.jpg", "Description": "" },
+        { "Path": "MSA_Gallet_LA100_Helmet_2.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "MSA Gallet LA100 helmet for Sukhoi Su-30 MKM(Malaysian variant). 3D Models done in Blender and textures done in Substance Painter.\nThis is a game asset intended for DCS World Community Su-30 Mod. 3D Model was provided by team member Neoshot. His link:\n<a className='link-primary' href='https://neoshot.artstation.com/'>https://neoshot.artstation.com/</a>\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 17,
+      "Name": "Zvezda K-36DM Ejection Seat",
+      "Thumbnail": "Zvezda_K-36DM_thumbnail.jpg",
+      "Images": [
+        { "Path": "Zvezda_K-36DM_1.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_2.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_3.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_4.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_5.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_6.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_7.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_8.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_9.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_10.jpg", "Description": "" },
+        { "Path": "Zvezda_K-36DM_11.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "The Zvezda K-36 is a series of ejection seats made by NPP Zvezda. Variants of this ejection seat have been used on a variety of aircraft, including the Su-25, Su-27, MiG-29, Su-30 MKI and the Su-57. The specific version presented here is the DM-II version mainly used in Sukhoi Su-30.\nThis is a game asset intended for DCS World Community Su-30 Mod.\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 18,
+      "Name": "Kh-38 Air to Surface Missiles",
+      "Thumbnail": "Kh-38_thumbnail.jpg",
+      "Images": [
+        { "Path": "Kh-38_1.jpg", "Description": "Kh-36 Front" },
+        { "Path": "Kh-38_2.jpg", "Description": "Kh-36 Rear" },
+        { "Path": "Kh-38_3.jpg", "Description": "Kh-38 MAE" },
+        { "Path": "Kh-38_4.jpg", "Description": "Kh-38 MLE" },
+        { "Path": "Kh-38_5.jpg", "Description": "Kh-38 MLE Seeker Head" },
+        { "Path": "Kh-38_6.jpg", "Description": "Kh-38 MTE" },
+        { "Path": "Kh-38_7.jpg", "Description": "Kh-38 Rear" },
+        { "Path": "Kh-38_8.jpg", "Description": "" },
+        { "Path": "Kh-38_9.jpg", "Description": "" },
+        { "Path": "Kh-38_10.jpg", "Description": "" },
+        { "Path": "Kh-38_11.jpg", "Description": "" },
+        { "Path": "Kh-38_12.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Kh-38 Family of Air to surface missiles. 3D Models done in Blender and textures done in Substance Painter. Variants presented:\nKh-38 MAE - Inertial + Active Radar AGM\nKh-38 MLE - Inertial + Semi-Active Laser AGM\nKh-38 MTE - Inertial + IR AGM\nKh-36 - Tactical Cruise Missile\nThis is a game asset intended for DCS World Community Su-30 Mod.\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 19,
+      "Name": "Zvezda Kh-35 Cruise Missile",
+      "Thumbnail": "Kh-35_thumbnail.jpg",
+      "Images": [
+        { "Path": "Kh-35_1.jpg", "Description": "Kh-35E Front" },
+        { "Path": "Kh-35_2.jpg", "Description": "Kh-35E Side" },
+        { "Path": "Kh-35_3.jpg", "Description": "Kh-35E Rear" },
+        { "Path": "Kh-35_4.jpg", "Description": "Kh-35UE Front" },
+        { "Path": "Kh-35_5.jpg", "Description": "Kh-35UE Side" },
+        { "Path": "Kh-35_6.jpg", "Description": "Kh-35UE Rear" },
+        { "Path": "Kh-35_7.jpg", "Description": "Kh-35UE Wings folded and intake cap removed" },
+        { "Path": "Kh-35_8.jpg", "Description": "" },
+        { "Path": "Kh-35_9.jpg", "Description": "" },
+        { "Path": "Kh-35_10.jpg", "Description": "" },
+        { "Path": "Kh-35_11.jpg", "Description": "" },
+        { "Path": "Kh-35_12.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Zvezda Kh-35 turbojet subsonic cruise anti-ship missile. 3D Models done in Blender and textures done in Substance Painter.\nVariants presented are: 35E and 35UE. UE is a more modern extended range variant. Launch platforms include Su-30, MiG-29K, Su-35 etc\nThis is a game asset intended for DCS World Community Su-30 Mod.\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 20,
+      "Name": "Kh-31 Air to Surface Missiles",
+      "Thumbnail": "Kh-31_thumbnail.jpg",
+      "Images": [
+        { "Path": "Kh-31_1.jpg", "Description": "Kh-31A/P Front" },
+        { "Path": "Kh-31_2.jpg", "Description": "Kh-31A/P Side" },
+        { "Path": "Kh-31_3.jpg", "Description": "Kh-31A/P Rear with booster separated" },
+        { "Path": "Kh-31_4.jpg", "Description": "Kh-31AD/PD Front" },
+        { "Path": "Kh-31_5.jpg", "Description": "Kh-31AD/PD Side" },
+        { "Path": "Kh-31_6.jpg", "Description": "Kh-31AD/PD Rear with booster separated" },
+        { "Path": "Kh-31_7.jpg", "Description": "" },
+        { "Path": "Kh-31_8.jpg", "Description": "" },
+        { "Path": "Kh-31_9.jpg", "Description": "" },
+        { "Path": "Kh-31_10.jpg", "Description": "" },
+        { "Path": "Kh-31_11.jpg", "Description": "" },
+        { "Path": "Kh-31_12.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Kh-31 air-to-surface missiles. 3D Models done in Blender and textures done in Substance Painter.\nVariants presented are: A,P,AD,PD. A is for antishipping or against other surface targets. P is Antiradiation variant intended for SEAD. AD and PD are extended range variants respectively. Launch platforms include Su-30, MiG-29K, Su-35\nThis is a game asset intended for DCS World Community Su-30 Mod.\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 21,
+      "Name": "Fuel Probe for Su-30",
+      "Thumbnail": "Fuel_probe_Su-30_thumbnail.jpg",
+      "Images": [
+        { "Path": "Fuel_probe_Su-30_1.jpg", "Description": "" },
+        { "Path": "Fuel_probe_Su-30_2.jpg", "Description": "" },
+        { "Path": "Fuel_probe_Su-30_3.jpg", "Description": "" },
+        { "Path": "Fuel_probe_Su-30_4.jpg", "Description": "" },
+        { "Path": "Fuel_probe_Su-30_5.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Sukhoi Su-30 is capable of in-flight refueling thanks to its retractable fuel probe. This 3D Model was done in Blender and textures were done in Substance Painter.\nThis is a game asset intended for DCS World Community Su-30 Mod.\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 22,
+      "Name": "Vympel Kh-29 Air to Surface Missiles",
+      "Thumbnail": "Kh-29_thumbnail.jpg",
+      "Images": [
+        { "Path": "Kh-29_1.jpg", "Description": "Kh-29L Front" },
+        { "Path": "Kh-29_2.jpg", "Description": "Kh-29L Rear" },
+        { "Path": "Kh-29_3.jpg", "Description": "Kh-29L Seeker Head" },
+        { "Path": "Kh-29_4.jpg", "Description": "Kh-29T/TE Front" },
+        { "Path": "Kh-29_5.jpg", "Description": "Kh-29T/TE Rear" },
+        { "Path": "Kh-29_6.jpg", "Description": "Kh-29T/TE Seeker Head" },
+        { "Path": "Kh-29_7.jpg", "Description": "" },
+        { "Path": "Kh-29_8.jpg", "Description": "" },
+        { "Path": "Kh-29_9.jpg", "Description": "" },
+        { "Path": "Kh-29_10.jpg", "Description": "" },
+        { "Path": "Kh-29_11.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Sukhoi Su-30 is capable of in-flight refueling thanks to its retractable fuel probe. This 3D Model was done in Blender and textures were done in Substance Painter.\nThis is a game asset intended for DCS World Community Su-30 Mod.\nProject details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 23,
+      "Name": "Saturn AL-31F Engine Nozzle",
+      "Thumbnail": "AL-31F_Engine_Nozzle_thumbnail.jpg",
+      "Images": [
+        { "Path": "AL-31F_Engine_Nozzle_1.jpg", "Description": "" },
+        { "Path": "AL-31F_Engine_Nozzle_2.jpg", "Description": "" },
+        { "Path": "AL-31F_Engine_Nozzle_3.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Saturn AL-31F Engine Nozzle textures done in Substance Painter. Powerplant for Sukhoi Su-30 incorporates two Saturn AL-31F afterburning low-bypass turbofan engines, fed through intake ramps. This model is the Nozzle for the engine. This is a game asset intended for DCS:World Community Su-30 Mod.\n3D Model was provided by team member Neoshot. His link:\n<a className='link-primary' href='https://neoshot.artstation.com/'>https://neoshot.artstation.com/</a>\nMod Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 24,
+      "Name": "Saturn AL-31F Engine Exterior",
+      "Thumbnail": "AL-31F_Engine_Exterior_thumbnail.jpg",
+      "Images": [
+        { "Path": "AL-31F_Engine_Exterior_1.jpg", "Description": "" },
+        { "Path": "AL-31F_Engine_Exterior_2.jpg", "Description": "" },
+        { "Path": "AL-31F_Engine_Exterior_3.jpg", "Description": "" },
+        { "Path": "AL-31F_Engine_Exterior_4.jpg", "Description": "" },
+        { "Path": "AL-31F_Engine_Exterior_5.jpg", "Description": "" },
+        { "Path": "AL-31F_Engine_Exterior_6.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Saturn AL-31F Engine exterior textures done in Substance Painter. Powerplant for Sukhoi Su-30 incorporates two Saturn AL-31F afterburning low-bypass turbofan engines, fed through intake ramps. This model is the exterior shell for the engine. This is a game asset intended for DCS World Community Su-30 Mod.\n3D Model was provided by team member Neoshot. His link:\n<a className='link-primary' href='https://neoshot.artstation.com/'>https://neoshot.artstation.com/</a>\nMod Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 25,
+      "Name": "Flight Sticks for Su-30",
+      "Thumbnail": "Su-30_Flight_Stick_thumbnail.jpg",
+      "Images": [
+        { "Path": "Su-30_Flight_Stick_1.jpg", "Description": "Stick for Pilot" },
+        { "Path": "Su-30_Flight_Stick_2.jpg", "Description": "Stick for WSO" },
+        { "Path": "Su-30_Flight_Stick_3.jpg", "Description": "Additional Stick for WSO" }
+      ],
+      "ArtistId": 2,
+      "Description": "Flight Control Sticks for Sukhoi Su-30. Texturing was done in Substance Painter.\nThis is a game asset intended for DCS World Community Su-30 Mod. 3D Model was provided by team member Neoshot. His link:\n<a className='link-primary' href='https://neoshot.artstation.com/'>https://neoshot.artstation.com/</a>\nMod Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 26,
+      "Name": "Su-35S Cockpit Topology",
+      "Thumbnail": "Su-35S_Cockpit_Topology_thumbnail.jpg",
+      "Images": [
+        { "Path": "Su-35S_Cockpit_Topology_1.jpg", "Description": "Front panel" },
+        { "Path": "Su-35S_Cockpit_Topology_2.jpg", "Description": "Right panel" },
+        { "Path": "Su-35S_Cockpit_Topology_3.jpg", "Description": "Left panel" },
+        { "Path": "Su-35S_Cockpit_Topology_4.jpg", "Description": "K-36D-5 Ejection Seat" },
+        { "Path": "Su-35S_Cockpit_Topology_5.jpg", "Description": "Flight stick" },
+        { "Path": "Su-35S_Cockpit_Topology_6.jpg", "Description": "Throttle" },
+        { "Path": "Su-35S_Cockpit_Topology_7.jpg", "Description": "Rudder pedal assembly" },
+        { "Path": "Su-35S_Cockpit_Topology_8.jpg", "Description": "Piping" },
+        { "Path": "Su-35S_Cockpit_Topology_9.jpg", "Description": "Peripherals" }
+      ],
+      "ArtistId": 2,
+      "Description": "3D Topology showcase for some of the key segments of Su-35 Flanker-E cockpit. 3D model and topology renders were done in Blender 2.92.\nThese game assets are part of the cockpit of Sukhoi 35S multirole fighter as observed in real life. This is intended to be used in DCS World Community Su-35S Mod. \nFor project details, visit our discord:\n<a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 27,
+      "Name": "Su-35S Cockpit 3D Assembly",
+      "Thumbnail": "Su-35S_Cockpit_3D_Assembly_thumbnail.jpg",
+      "Images": [
+        { "Path": "Su-35S_Cockpit_3D_Assembly_1.jpg", "Description": "Top view" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_2.jpg", "Description": "Outside view from right" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_3.jpg", "Description": "Outside view from left" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_4.jpg", "Description": "Front" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_5.jpg", "Description": "Different angle" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_6.jpg", "Description": "Right Panel" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_7.jpg", "Description": "Left Panel" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_8.jpg", "Description": "Footwell" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_9.jpg", "Description": "Rear-left" },
+        { "Path": "Su-35S_Cockpit_3D_Assembly_10.jpg", "Description": "Rear-right" }
+      ],
+      "ArtistId": 2,
+      "Description": "3D Assembly showcase for Su-35 Flanker-E cockpit.\n3D model was created in Blender 2.92 and Renders were created in I-Ray inside Substance Painter 2020. This model has not been unwrapped for this showcase and the baked maps may highlight some artifacts.\nThis is a collection of game assets put together to represent the cockpit of Sukhoi 35S multirole fighter as observed in real life. \nThis is intended to be used in DCS World Community Su-35S Mod. For project details, visit our discord:\n<a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 28,
+      "Name": "Su-35S Cockpit Textures",
+      "Thumbnail": "Su-35S_Cockpit_Textures_thumbnail.jpg",
+      "Images": [
+        { "Path": "Su-35S_Cockpit_Textures_1.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_2.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_3.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_4.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_5.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_6.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_7.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_8.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_9.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_10.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_11.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_12.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_13.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_14.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_15.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_16.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_17.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_18.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_19.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_20.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_21.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_22.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_23.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_24.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_25.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_26.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_27.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_28.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_29.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_30.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_31.jpg", "Description": "" },
+        { "Path": "Su-35S_Cockpit_Textures_32.jpg", "Description": "" }
+      ],
+      "ArtistId": 2,
+      "Description": "Texture showcase for Su-35 Flanker-E cockpit inside DCS:World.\n3D model was created in Blender 2.92 and Textures were made in Substance Painter 2021. Screenshots for this showcase were taken in game in real time. I used UDIM workflow this time and also, every single asset was manually unwrapped and distributed in 15 texture sets. PBR RoughMet workflow was used.\nThis is a collection of game assets put together to represent the cockpit of Sukhoi 35S multirole fighter as observed in real life. \nThis is intended to be used in DCS World Community Su-35S Mod. For project details, visit our discord:\n<a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 29,
+      "Name": "R-77",
+      "Thumbnail": "R-77_3.jpg",
+      "Images": [
+        { "Path": "R-77_1.jpg", "Description": "" },
+        { "Path": "R-77_2.jpg", "Description": "" },
+        { "Path": "R-77_4.jpg", "Description": "" },
+        { "Path": "R-77_5.jpg", "Description": "" },
+        { "Path": "R-77_6.jpg", "Description": "" },
+        { "Path": "R-77_7.jpg", "Description": "" },
+        { "Path": "R-77_8.jpg", "Description": "" },
+        { "Path": "R-77_9.jpg", "Description": "" },
+        { "Path": "R-77_10.jpg", "Description": "" },
+        { "Path": "R-77_11.jpg", "Description": "" },
+        { "Path": "R-77_12.jpg", "Description": "" },
+        { "Path": "R-77_13.jpg", "Description": "" },
+        { "Path": "R-77_14.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian air-to-air missile R-77. This model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 5641\nTriangles: 12494"
+    },
+    {
+      "Id": 30,
+      "Name": "FAB-500 M-62NV 'Bearoar'",
+      "Thumbnail": "FAB-500_M-62NV_3.jpg",
+      "Images": [
+        { "Path": "FAB-500_M-62NV_1.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_2.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_4.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_5.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_6.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_7.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_8.jpg", "Description": "Deployed state" },
+        { "Path": "FAB-500_M-62NV_9.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_10.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_11.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_12.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_13.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_14.jpg", "Description": "" },
+        { "Path": "FAB-500_M-62NV_15.jpg", "Description": "" }
+      ],
+      "ArtistId": 1,
+      "Description": "This is first fiction weapon in my weapon pack based on FAB-500 M-62 and Mk-82 Snakeye. I was inspired by Mk-82 umbrella brake and wanted to make something similar in Soviet bombs.\nThis model animated and have LODS.\nTriangles count:\nBase model: 12752\nLOD_0 (~82% polygons): 10816\nLOD_1 (~65% polygons): 8442\nLOD_2 (~47% polygons): 5894\nLOD_3 (~30% polygons): 3242\nModel have one material and texture 2048x2048.\nBase model and LODS are skinned by bones (bones control deployable umbrella system of bomb).\nThis model have been created for DCS World Community Su-30 Mod. Project details: <a className='link-primary' href='https://discord.gg/sbw8A5Mg75'>https://discord.gg/sbw8A5Mg75</a>"
+    }
+  ]
+}
