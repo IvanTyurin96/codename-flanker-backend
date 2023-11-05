@@ -17,7 +17,7 @@ namespace CodenameFlanker.Data.Migrations
 			foreach (Artwork artwork in artworks)
 			{
 				migrationBuilder.Sql(@$"INSERT INTO Artwork (Id, Name, Thumbnail, Description)
-										VALUES ({artwork.Id}, '{artwork.Name}', '{artwork.Thumbnail}', '')");
+										VALUES ({artwork.Id}, '{artwork.Name}', '{artwork.Thumbnail}', '{artwork.Description}')");
 				foreach (Image image in artwork.Images)
 				{
 					migrationBuilder.Sql(@$"INSERT INTO Image (Path, Description, ArtworkId)
