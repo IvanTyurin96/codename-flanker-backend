@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodenameFlanker.Data.Migrations
 {
     [DbContext(typeof(CodenameFlankerDbContext))]
-    [Migration("20231105200442_insert-data")]
-    partial class insertdata
+    [Migration("20231105203024_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,9 +24,34 @@ namespace CodenameFlanker.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CodenameFlanker.Data.Entities.Artist", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Artist", (string)null);
+                });
+
             modelBuilder.Entity("CodenameFlanker.Data.Entities.Artwork", b =>
                 {
                     b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ArtistId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -43,6 +68,8 @@ namespace CodenameFlanker.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ArtistId");
+
                     b.ToTable("Artwork", (string)null);
                 });
 
@@ -58,16 +85,29 @@ namespace CodenameFlanker.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Path")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ArtworkId");
 
-                    b.ToTable("Image");
+                    b.ToTable("Image", (string)null);
+                });
+
+            modelBuilder.Entity("CodenameFlanker.Data.Entities.Artwork", b =>
+                {
+                    b.HasOne("CodenameFlanker.Data.Entities.Artist", "Artist")
+                        .WithMany()
+                        .HasForeignKey("ArtistId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Artist");
                 });
 
             modelBuilder.Entity("CodenameFlanker.Data.Entities.Image", b =>

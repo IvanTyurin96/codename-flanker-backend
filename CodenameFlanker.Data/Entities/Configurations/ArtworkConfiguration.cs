@@ -22,9 +22,9 @@ public class ArtworkConfiguration : IEntityTypeConfiguration<Artwork>
 			.HasColumnType("nvarchar(255)")
 			.IsRequired();
 
-		//builder.Property(x => x.ArtistId)
-		//	.HasColumnType("int")
-		//	.IsRequired();
+		builder.Property(x => x.ArtistId)
+			.HasColumnType("int")
+			.IsRequired();
 
 		builder.Property(x => x.Description)
 			.HasColumnType("nvarchar(2000)")
@@ -33,6 +33,11 @@ public class ArtworkConfiguration : IEntityTypeConfiguration<Artwork>
 		builder.HasMany(x => x.Images)
 			.WithOne()
 			.HasForeignKey(x => x.ArtworkId)
+			.OnDelete(DeleteBehavior.Restrict);
+
+		builder.HasOne(x => x.Artist)
+			.WithMany()
+			.HasForeignKey(x => x.ArtistId)
 			.OnDelete(DeleteBehavior.Restrict);
 	}
 }

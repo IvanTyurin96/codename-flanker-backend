@@ -564,5 +564,19 @@
       "ArtistId": 1,
       "Description": "This is first fiction weapon in my weapon pack based on FAB-500 M-62 and Mk-82 Snakeye. I was inspired by Mk-82 umbrella brake and wanted to make something similar in Soviet bombs.\nThis model animated and have LODS.\nTriangles count:\nBase model: 12752\nLOD_0 (~82% polygons): 10816\nLOD_1 (~65% polygons): 8442\nLOD_2 (~47% polygons): 5894\nLOD_3 (~30% polygons): 3242\nModel have one material and texture 2048x2048.\nBase model and LODS are skinned by bones (bones control deployable umbrella system of bomb).\nThis model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>"
     }
+  ],
+  "Artists": [
+    {
+      "Id": 1,
+      "Name": "Ivan Tyurin",
+      "Icon": "ivan_tyurin-icon.jpg",
+      "Role": "3D Artist"
+    },
+    {
+      "Id": 2,
+      "Name": "BARON",
+      "Icon": "baron-icon.jpg",
+      "Role": "3D Artist - Modeling & Texturing"
+    }
   ]
 }

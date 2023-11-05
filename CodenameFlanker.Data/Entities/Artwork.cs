@@ -6,6 +6,7 @@ public class Artwork
 	public string Name { get; set; }
 	public string Thumbnail { get; set; }
 	public List<Image> Images { get; set; }
-	//public int ArtistId { get; set; }
+	public int ArtistId { get; set; }
+	public Artist Artist { get; set; }
 	public string Description { get; set; }
 }

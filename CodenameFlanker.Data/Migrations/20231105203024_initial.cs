@@ -11,17 +11,38 @@ namespace CodenameFlanker.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Artist",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    Icon = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    Role = table.Column<string>(type: "nvarchar(255)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Artist", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Artwork",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     Thumbnail = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    ArtistId = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(2000)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Artwork", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Artwork_Artist_ArtistId",
+                        column: x => x.ArtistId,
+                        principalTable: "Artist",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -30,8 +51,8 @@ namespace CodenameFlanker.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Path = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Path = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     ArtworkId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -44,6 +65,11 @@ namespace CodenameFlanker.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Artwork_ArtistId",
+                table: "Artwork",
+                column: "ArtistId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Image_ArtworkId",
@@ -59,6 +85,9 @@ namespace CodenameFlanker.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Artwork");
+
+            migrationBuilder.DropTable(
+                name: "Artist");
         }
     }
 }

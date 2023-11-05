@@ -14,6 +14,8 @@ public class CodenameFlankerDbContext : DbContext
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
+		modelBuilder.ApplyConfiguration(new ArtistConfiguration());
 		modelBuilder.ApplyConfiguration(new ArtworkConfiguration());
+		modelBuilder.ApplyConfiguration(new ImageConfiguration());
 	}
 }
