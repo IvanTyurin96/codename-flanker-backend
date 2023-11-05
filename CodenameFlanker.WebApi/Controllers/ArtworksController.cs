@@ -20,6 +20,6 @@ public class ArtworksController : ControllerBase
 	[HttpGet]
 	public async Task<List<Artwork>> GetArtworks()
 	{
-		return await _dbContext.Artworks.AsNoTracking().ToListAsync();//.Include(x => x.Images).ToListAsync();
+		return await _dbContext.Artworks.AsNoTracking().Include(x => x.Images).ToListAsync();
 	}
 }

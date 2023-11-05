@@ -22,9 +22,9 @@ public class ArtworkConfiguration : IEntityTypeConfiguration<Artwork>
 			.HasColumnType("nvarchar(255)")
 			.IsRequired();
 
-		builder.Property(x => x.ArtistId)
-			.HasColumnType("int")
-			.IsRequired();
+		//builder.Property(x => x.ArtistId)
+		//	.HasColumnType("int")
+		//	.IsRequired();
 
 		builder.Property(x => x.Description)
 			.HasColumnType("nvarchar(2000)")

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodenameFlanker.Data.Migrations
 {
     [DbContext(typeof(CodenameFlankerDbContext))]
-    [Migration("20231105103852_insert-data")]
+    [Migration("20231105200442_insert-data")]
     partial class insertdata
     {
         /// <inheritdoc />
@@ -28,6 +28,10 @@ namespace CodenameFlanker.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(2000)");
 
                     b.Property<string>("Name")
                         .IsRequired()

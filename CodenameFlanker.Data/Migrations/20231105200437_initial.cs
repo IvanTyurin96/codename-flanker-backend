@@ -16,7 +16,8 @@ namespace CodenameFlanker.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(255)", nullable: false),
-                    Thumbnail = table.Column<string>(type: "nvarchar(255)", nullable: false)
+                    Thumbnail = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(2000)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -48,7 +49,7 @@ namespace CodenameFlanker.Data.Migrations
                 name: "IX_Image_ArtworkId",
                 table: "Image",
                 column: "ArtworkId");
-		}
+        }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
