@@ -578,5 +578,65 @@
       "Icon": "baron-icon.jpg",
       "Role": "3D Artist - Modeling & Texturing"
     }
+  ],
+  "Patchnotes": [
+    {
+      "Id": 3,
+      "Version": "2.1.12 Beta",
+      "PatchnoteChanges": [
+        {
+          "Name": "List of fixes:",
+          "Change": "- Fixed nozzle direction animation when using TVC\n- Fixed AI Canopy and Canard animations\n- Fixed missing star on livery of Su-30SM\n- Fixed incorrect naming of livery\n- Fixed missing text on MK-Type UFC\n- Fixed missing geometry detail on pilot in exterior view\n- Fixed loft characteristics of R-77-1"
+        },
+        {
+          "Name": "Changes/Additions:",
+          "Change": "- Added ability to change Cockpit Skin and Language from Special Settings in game\n- Added ability to set Countermeasure Programs from Special Settings in game\n- Significantly reduced Poly count of external model\n- Added new A2G weapons: KAB-500L, SAB-100\n- Added new A2A weapons: R-73L, R-73M, RVV-EA (export R-77) and RVV-SD (export R-77-1)\n- Added key-bind for Next/previous Target/waypoint/airfield\n- Added SAP-518 Advanced Jammer Suit(Only basic functionality)\n- Ladder/Stick/Throttle now has option for Hide/Show using mouse click\n- Radio change preset with custom frequency\n- Weapon names in loadout are now more informative\n- More Stable SFM behavior\n- Added Logbooks"
+        },
+        {
+          "Name": "Important Notes:",
+          "Change": "- All configuration related changes are now done using in-game settings. No need to touch ''Config.lua'' anymore"
+        },
+        {
+          "Name": "In Progress:",
+          "Change": "- External Flight Model\n- Unusual FPS drop due to new script algorithm"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Version": "2.1.10 Beta",
+      "PatchnoteChanges": [
+        {
+          "Name": "List of fixes:",
+          "Change": "- Fixed missing texture in canopy\n- Fixed artifacts related to glass reflection\n- Fixed Joystick/Keyboard conflict (No need to toggle AFCS anymore for keyboard users)\n- Fixed several RWR bugs\n- Darkened SM HUD glass color\n- Fixed AI not engaging AG targets\n- Fixed some of the weapons not working correctly \n- Fixed no change on fuel qty when doing AAR.\n- Removed buggy Fire warning light"
+        },
+        {
+          "Name": "Changes/Additions:",
+          "Change": "- Added 3 color variations for Cockpit\n- Added ability to choose Cockpit Language and Avionics (Russian/English). Translation done by @Архангел and @SK=52=MNXAH4NK \n- A full rework of labeling of all the instrument gauges by @Crow \n- Replaced old ejection seat model with newer K-36D-5 variant\n- Added ability to carry western munitions to MKM, namely Gbu12/38 and MK82\n- Added Fictional HMD functionality\n- Added TSD Map Waypoint\n- Added Waypoints HUD Symbology\n- Added some missing Key binds\n- Added some logic for PS-2 onboard computer \n- Added INS alignment page for MFD\n- Changed Instrument Power Switch to R/F instead of MFWS\n- Added Key bind for smoke\n- Added SEMI/AUTO Mode to ECM Dispenser\n- Add MFD MFWS Brake Pressure indicator \n- Added ELM2060 POD (For show only for now)\n- Added 3D model for MKM NATO Pylon on External Model"
+        },
+        {
+          "Name": "Important Notes:",
+          "Change": "- Cockpit Color and Language options can be changed from inside config.lua by using parameters ''Cockpit_SKIN'' and ''Cockpit_LANG''\n- AA and AG roles are now both available by default inside Mission Editor. No need to toggle them from config.lua\n- Startup procedure has been overhauled slightly. Refer to the new tutorial in #tutorials"
+        },
+        {
+          "Name": "In progress:",
+          "Change": "- Rewrite Waypoint management system\n- External Flight Model\n- Radio System"
+        }
+      ]
+    },
+    {
+      "Id": 1,
+      "Version": "2.01 Beta",
+      "PatchnoteChanges": [
+        {
+          "Name": "List of fixes/additions:",
+          "Change": "- Canopy Glare reduced for better visibility\n- HUD made darker for better visibility\n- Brahmos tracking fix\n- R27R fixed missile reaching mach 10\n- Pilot Eyes fix. No more creepy eyes staring at your soul\n- Engine Shutoff keybind added. Physical button in cockpit is also functional. Requires Press and Hold \n- OLS fixed\n- RWR tone fix and indication added to HUD\n- RWR Volume can now be adjusted\n- MFD preset is now correctly determined when selecting NAV/AA/AG modes\n- Gun Sounds fix\n- Fixed Kh-59MK2 clashing with Su 57 mod\n- NVG now correctly functions\n- Cockpit Engine sound added\n- Smoke pods now functional. Keybind is same as FC3.\n- keybind for jettison of payload added\n- IC breaking elements fixed"
+        },
+        {
+          "Name": "Known issues:",
+          "Change": "- Brahmos booster phase(SDK limitations)\n- cockpit afterburner sound switch to quieter sound and back\n- Engine Crank handle starts 1 engine"
+        }
+      ]
+    }
   ]
 }

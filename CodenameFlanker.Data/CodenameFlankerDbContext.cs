@@ -7,6 +7,7 @@ namespace CodenameFlanker.Data;
 public class CodenameFlankerDbContext : DbContext
 {
 	public DbSet<Artwork> Artworks { get; set; }
+	public DbSet<Patchnote> Patchnotes { get; set; }
 
 	public CodenameFlankerDbContext(DbContextOptions<CodenameFlankerDbContext> options) : base(options)
 	{
@@ -17,5 +18,7 @@ public class CodenameFlankerDbContext : DbContext
 		modelBuilder.ApplyConfiguration(new ArtistConfiguration());
 		modelBuilder.ApplyConfiguration(new ArtworkConfiguration());
 		modelBuilder.ApplyConfiguration(new ImageConfiguration());
+		modelBuilder.ApplyConfiguration(new PatchnoteConfiguration());
+		modelBuilder.ApplyConfiguration(new PatchnoteChangeConfiguration());
 	}
 }

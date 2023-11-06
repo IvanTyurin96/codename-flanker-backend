@@ -13,7 +13,6 @@ namespace CodenameFlanker.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
 			List<Artist> artists = InitialDataParser.ParseSection<Artist>("Artists");
-
 			foreach (var artist in artists)
 			{
 				migrationBuilder.Sql(@$"INSERT INTO Artist (Id, Name, Icon, Role)
@@ -21,7 +20,6 @@ namespace CodenameFlanker.Data.Migrations
 			}
 
 			List<Artwork> artworks = InitialDataParser.ParseSection<Artwork>("Artworks");
-
 			foreach (Artwork artwork in artworks)
 			{
 				migrationBuilder.Sql(@$"INSERT INTO Artwork (Id, Name, Thumbnail, ArtistId, Description)
@@ -30,6 +28,18 @@ namespace CodenameFlanker.Data.Migrations
 				{
 					migrationBuilder.Sql(@$"INSERT INTO Image (Path, Description, ArtworkId)
 											VALUES ('{image.Path}', '{image.Description}', {artwork.Id})");
+				}
+			}
+
+			List<Patchnote> patchnotes = InitialDataParser.ParseSection<Patchnote>("Patchnotes");
+			foreach (Patchnote patchnote in patchnotes)
+			{
+				migrationBuilder.Sql(@$"INSERT INTO Patchnote (Id, Version)
+										VALUES ({patchnote.Id}, '{patchnote.Version}')");
+				foreach(PatchnoteChange patchnoteChange in patchnote.PatchnoteChanges)
+				{
+					migrationBuilder.Sql(@$"INSERT INTO PatchnoteChange (Name, Change, PatchnoteId)
+										VALUES ('{patchnoteChange.Name}', '{patchnoteChange.Change}', {patchnote.Id})");
 				}
 			}
 		}

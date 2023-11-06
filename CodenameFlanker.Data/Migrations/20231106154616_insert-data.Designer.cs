@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodenameFlanker.Data.Migrations
 {
     [DbContext(typeof(CodenameFlankerDbContext))]
-    [Migration("20231105203029_insert-data")]
+    [Migration("20231106154616_insert-data")]
     partial class insertdata
     {
         /// <inheritdoc />
@@ -99,6 +99,46 @@ namespace CodenameFlanker.Data.Migrations
                     b.ToTable("Image", (string)null);
                 });
 
+            modelBuilder.Entity("CodenameFlanker.Data.Entities.Patchnote", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Version")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Patchnote", (string)null);
+                });
+
+            modelBuilder.Entity("CodenameFlanker.Data.Entities.PatchnoteChange", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Change")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<int>("PatchnoteId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PatchnoteId");
+
+                    b.ToTable("PatchnoteChange", (string)null);
+                });
+
             modelBuilder.Entity("CodenameFlanker.Data.Entities.Artwork", b =>
                 {
                     b.HasOne("CodenameFlanker.Data.Entities.Artist", "Artist")
@@ -119,9 +159,23 @@ namespace CodenameFlanker.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("CodenameFlanker.Data.Entities.PatchnoteChange", b =>
+                {
+                    b.HasOne("CodenameFlanker.Data.Entities.Patchnote", null)
+                        .WithMany("PatchnoteChanges")
+                        .HasForeignKey("PatchnoteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("CodenameFlanker.Data.Entities.Artwork", b =>
                 {
                     b.Navigation("Images");
+                });
+
+            modelBuilder.Entity("CodenameFlanker.Data.Entities.Patchnote", b =>
+                {
+                    b.Navigation("PatchnoteChanges");
                 });
 #pragma warning restore 612, 618
         }

@@ -8,18 +8,18 @@ namespace CodenameFlanker.WebApi.Controllers;
 
 [Produces(MediaTypeNames.Application.Json)]
 [Route("v1/[controller]")]
-public class ArtworksController : ControllerBase
+public class PatchnoteController : ControllerBase
 {
 	private readonly CodenameFlankerDbContext _dbContext;
 
-	public ArtworksController(CodenameFlankerDbContext dbContext)
+	public PatchnoteController(CodenameFlankerDbContext dbContext)
 	{
 		_dbContext = dbContext;
 	}
 
 	[HttpGet]
-	public async Task<List<Artwork>> GetArtworks()
+	public async Task<List<Patchnote>> GetPatchnotes()
 	{
-		return await _dbContext.Artworks.AsNoTracking().Include(x => x.Images).Include(x => x.Artist).ToListAsync();
+		return await _dbContext.Patchnotes.AsNoTracking().Include(x => x.PatchnoteChanges).ToListAsync();
 	}
 }
