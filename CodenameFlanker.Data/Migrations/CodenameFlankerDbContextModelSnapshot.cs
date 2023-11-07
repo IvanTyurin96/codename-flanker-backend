@@ -136,6 +136,27 @@ namespace CodenameFlanker.Data.Migrations
                     b.ToTable("PatchnoteChange", (string)null);
                 });
 
+            modelBuilder.Entity("CodenameFlanker.Data.Entities.Screenshot", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Path")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Thumbnail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Screenshot", (string)null);
+                });
+
             modelBuilder.Entity("CodenameFlanker.Data.Entities.Artwork", b =>
                 {
                     b.HasOne("CodenameFlanker.Data.Entities.Artist", "Artist")

@@ -638,5 +638,67 @@
         }
       ]
     }
+  ],
+  "Screenshots": [
+    {
+      "Path": "screenshot-1.jpg",
+      "Thumbnail": "screenshot-1-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-2.jpg",
+      "Thumbnail": "screenshot-2-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-3.jpg",
+      "Thumbnail": "screenshot-3-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-4.jpg",
+      "Thumbnail": "screenshot-4-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-5.jpg",
+      "Thumbnail": "screenshot-5-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-6.jpg",
+      "Thumbnail": "screenshot-6-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-7.jpg",
+      "Thumbnail": "screenshot-7-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-8.jpg",
+      "Thumbnail": "screenshot-8-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-9.jpg",
+      "Thumbnail": "screenshot-9-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-10.jpg",
+      "Thumbnail": "screenshot-10-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-11.jpg",
+      "Thumbnail": "screenshot-11-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-12.jpg",
+      "Thumbnail": "screenshot-12-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-13.jpg",
+      "Thumbnail": "screenshot-13-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-14.jpg",
+      "Thumbnail": "screenshot-14-thumbnail.jpg"
+    },
+    {
+      "Path": "screenshot-15.jpg",
+      "Thumbnail": "screenshot-15-thumbnail.jpg"
+    }
   ]
 }

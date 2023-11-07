@@ -37,6 +37,20 @@ namespace CodenameFlanker.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Screenshot",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Path = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    Thumbnail = table.Column<string>(type: "nvarchar(255)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Screenshot", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Artwork",
                 columns: table => new
                 {
@@ -123,6 +137,9 @@ namespace CodenameFlanker.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "PatchnoteChange");
+
+            migrationBuilder.DropTable(
+                name: "Screenshot");
 
             migrationBuilder.DropTable(
                 name: "Artwork");

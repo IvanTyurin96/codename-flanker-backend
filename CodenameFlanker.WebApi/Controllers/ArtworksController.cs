@@ -1,5 +1,6 @@
 ﻿using CodenameFlanker.Data;
 using CodenameFlanker.Data.Entities;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net.Mime;
@@ -11,15 +12,20 @@ namespace CodenameFlanker.WebApi.Controllers;
 public class ArtworksController : ControllerBase
 {
 	private readonly CodenameFlankerDbContext _dbContext;
+	private readonly IWebHostEnvironment _webHostEnvironment;
 
-	public ArtworksController(CodenameFlankerDbContext dbContext)
+	public ArtworksController(CodenameFlankerDbContext dbContext, IWebHostEnvironment webHostEnvironment)
 	{
 		_dbContext = dbContext;
+		_webHostEnvironment = webHostEnvironment;
 	}
 
-	[HttpGet]
-	public async Task<List<Artwork>> GetArtworks()
+	[HttpGet("get")]
+	public async Task<IActionResult> GetArtworks()
 	{
-		return await _dbContext.Artworks.AsNoTracking().Include(x => x.Images).Include(x => x.Artist).ToListAsync();
+		var artworks = await _dbContext.Artworks.AsNoTracking()
+			.Include(x => x.Images)
+			.Include(x => x.Artist).ToListAsync();
+		return Ok(artworks);
 	}
 }

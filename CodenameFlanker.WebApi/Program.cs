@@ -8,6 +8,7 @@ builder.Services.AddDbContext<CodenameFlankerDbContext>(
 	options => options.UseSqlServer(builder.Configuration.GetConnectionString("CodenameFlanker")));
 
 builder.Services.AddControllers();
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

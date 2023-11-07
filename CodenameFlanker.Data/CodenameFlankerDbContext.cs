@@ -20,5 +20,6 @@ public class CodenameFlankerDbContext : DbContext
 		modelBuilder.ApplyConfiguration(new ImageConfiguration());
 		modelBuilder.ApplyConfiguration(new PatchnoteConfiguration());
 		modelBuilder.ApplyConfiguration(new PatchnoteChangeConfiguration());
+		modelBuilder.ApplyConfiguration(new ScreenshotConfiguration());
 	}
 }

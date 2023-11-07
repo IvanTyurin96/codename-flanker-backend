@@ -36,11 +36,18 @@ namespace CodenameFlanker.Data.Migrations
 			{
 				migrationBuilder.Sql(@$"INSERT INTO Patchnote (Id, Version)
 										VALUES ({patchnote.Id}, '{patchnote.Version}')");
-				foreach(PatchnoteChange patchnoteChange in patchnote.PatchnoteChanges)
+				foreach (PatchnoteChange patchnoteChange in patchnote.PatchnoteChanges)
 				{
 					migrationBuilder.Sql(@$"INSERT INTO PatchnoteChange (Name, Change, PatchnoteId)
 										VALUES ('{patchnoteChange.Name}', '{patchnoteChange.Change}', {patchnote.Id})");
 				}
+			}
+
+			List<Screenshot> screenshots = InitialDataParser.ParseSection<Screenshot>("Screenshots");
+			foreach (Screenshot screenshot in screenshots)
+			{
+				migrationBuilder.Sql(@$"INSERT INTO Screenshot (Path, Thumbnail)
+										VALUES ('{screenshot.Path}', '{screenshot.Thumbnail}')");
 			}
 		}
 

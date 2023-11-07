@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodenameFlanker.Data.Migrations
 {
     [DbContext(typeof(CodenameFlankerDbContext))]
-    [Migration("20231106154611_initial")]
+    [Migration("20231107165951_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -137,6 +137,27 @@ namespace CodenameFlanker.Data.Migrations
                     b.HasIndex("PatchnoteId");
 
                     b.ToTable("PatchnoteChange", (string)null);
+                });
+
+            modelBuilder.Entity("CodenameFlanker.Data.Entities.Screenshot", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Path")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Thumbnail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Screenshot", (string)null);
                 });
 
             modelBuilder.Entity("CodenameFlanker.Data.Entities.Artwork", b =>
