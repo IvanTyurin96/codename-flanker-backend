@@ -12,14 +12,16 @@ namespace CodenameFlanker.Data.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-			List<Artist> artists = InitialDataParser.ParseSection<Artist>("Artists");
+			string jsonFile = "initialData.json";
+
+			List<Artist> artists = JsonParser.ParseSection<Artist>("Artists", jsonFile);
 			foreach (var artist in artists)
 			{
 				migrationBuilder.Sql(@$"INSERT INTO Artist (Id, Name, Icon, Role)
 										VALUES ({artist.Id}, '{artist.Name}', '{artist.Icon}', '{artist.Role}')");
 			}
 
-			List<Artwork> artworks = InitialDataParser.ParseSection<Artwork>("Artworks");
+			List<Artwork> artworks = JsonParser.ParseSection<Artwork>("Artworks", jsonFile);
 			foreach (Artwork artwork in artworks)
 			{
 				migrationBuilder.Sql(@$"INSERT INTO Artwork (Id, Name, Thumbnail, ArtistId, Description)
@@ -31,7 +33,7 @@ namespace CodenameFlanker.Data.Migrations
 				}
 			}
 
-			List<Patchnote> patchnotes = InitialDataParser.ParseSection<Patchnote>("Patchnotes");
+			List<Patchnote> patchnotes = JsonParser.ParseSection<Patchnote>("Patchnotes", jsonFile);
 			foreach (Patchnote patchnote in patchnotes)
 			{
 				migrationBuilder.Sql(@$"INSERT INTO Patchnote (Id, Version)
@@ -43,7 +45,7 @@ namespace CodenameFlanker.Data.Migrations
 				}
 			}
 
-			List<Screenshot> screenshots = InitialDataParser.ParseSection<Screenshot>("Screenshots");
+			List<Screenshot> screenshots = JsonParser.ParseSection<Screenshot>("Screenshots", jsonFile);
 			foreach (Screenshot screenshot in screenshots)
 			{
 				migrationBuilder.Sql(@$"INSERT INTO Screenshot (Path, Thumbnail)

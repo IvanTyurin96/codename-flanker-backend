@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CodenameFlanker.Data.Helpers;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace CodenameFlanker.Data;
@@ -7,8 +8,11 @@ public class CodenameFlankerDbContextFactory : IDesignTimeDbContextFactory<Coden
 {
 	public CodenameFlankerDbContext CreateDbContext(string[] args)
 	{
+		string jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "migrationSettings.json");
+		string connectionString = JsonParser.GetConnectionString("CodenameFlanker", jsonPath);
+
 		var optionsBuilder = new DbContextOptionsBuilder<CodenameFlankerDbContext>();
-		optionsBuilder.UseSqlServer("Data Source=(LocalDb)\\MSSQLLocalDB;Initial Catalog=CodenameFlanker;Integrated Security=SSPI;");
+		optionsBuilder.UseSqlServer(connectionString);
 		return new CodenameFlankerDbContext(optionsBuilder.Options);
 	}
 }
