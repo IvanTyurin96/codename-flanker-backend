@@ -22,6 +22,7 @@ public class PatchnotesController : ControllerBase
 	[HttpGet]
 	public async Task<List<Patchnote>> GetPatchnotes()
 	{
+		Thread.Sleep(1000);
 		return await _dbContext.Patchnotes.AsNoTracking().Include(x => x.PatchnoteChanges).ToListAsync();
 	}
 
