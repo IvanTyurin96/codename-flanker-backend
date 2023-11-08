@@ -20,10 +20,15 @@ public class PatchnotesController : ControllerBase
 	}
 
 	[HttpGet]
-	public async Task<List<Patchnote>> GetPatchnotes()
+	[ProducesResponseType(StatusCodes.Status200OK)]
+	public async Task<IActionResult> Get()
 	{
 		Thread.Sleep(1000);
-		return await _dbContext.Patchnotes.AsNoTracking().Include(x => x.PatchnoteChanges).ToListAsync();
+		var patchnotes = await _dbContext.Patchnotes.AsNoTracking()
+			.Include(x => x.PatchnoteChanges)
+			.OrderByDescending(x => x.Id)
+			.ToListAsync();
+		return Ok(patchnotes);
 	}
 
 	//[HttpGet]
