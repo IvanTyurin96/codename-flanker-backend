@@ -9,8 +9,9 @@ public class CodenameFlankerDbContext : DbContext
 	public DbSet<Artwork> Artworks { get; set; }
 	public DbSet<Patchnote> Patchnotes { get; set; }
 	public DbSet<Artist> Artists { get; set; }
+    public DbSet<Screenshot> Screenshots { get; set; }
 
-	public CodenameFlankerDbContext(DbContextOptions<CodenameFlankerDbContext> options) : base(options)
+    public CodenameFlankerDbContext(DbContextOptions<CodenameFlankerDbContext> options) : base(options)
 	{
 	}
 

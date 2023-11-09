@@ -1,5 +1,9 @@
 using CodenameFlanker.Data;
 using Microsoft.EntityFrameworkCore;
+using CodenameFlanker.Services.Screenshots.Extensions;
+using CodenameFlanker.Services.Patchnotes.Extensions;
+using CodenameFlanker.Services.Artworks.Extensions;
+using CodenameFlanker.Services.Artists.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,9 +11,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<CodenameFlankerDbContext>(
 	options => options.UseSqlServer(builder.Configuration.GetConnectionString("CodenameFlanker")));
 
+builder.Services.AddArtworksService();
+builder.Services.AddPatchnotesService();
+builder.Services.AddScreenshotsService();
+builder.Services.AddArtistsService();
+
+
 builder.Services.AddControllers();
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -23,10 +32,10 @@ if (app.Environment.IsDevelopment())
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
+app.UseHsts();
+app.UseStaticFiles();
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
 
 app.UseCors(cors => cors
 	.AllowAnyMethod()

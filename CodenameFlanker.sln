@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodenameFlanker.WebApi", "CodenameFlanker.WebApi\CodenameFlanker.WebApi.csproj", "{CEEA4B8D-906B-42BF-9755-1890668D2376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodenameFlanker.WebApi", "CodenameFlanker.WebApi\CodenameFlanker.WebApi.csproj", "{CEEA4B8D-906B-42BF-9755-1890668D2376}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodenameFlanker.Data", "CodenameFlanker.Data\CodenameFlanker.Data.csproj", "{6CFCE7B4-F6FF-45E5-8DB5-4EA51E2162A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodenameFlanker.Data", "CodenameFlanker.Data\CodenameFlanker.Data.csproj", "{6CFCE7B4-F6FF-45E5-8DB5-4EA51E2162A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodenameFlanker.Contracts", "CodenameFlanker.Contracts\CodenameFlanker.Contracts.csproj", "{B8CB1AE2-C466-4A1E-AFD3-2E2BF7DEB795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodenameFlanker.Services", "CodenameFlanker.Services\CodenameFlanker.Services.csproj", "{D6CF2663-6F09-4915-A3EE-0726CD52FF0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{6CFCE7B4-F6FF-45E5-8DB5-4EA51E2162A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CFCE7B4-F6FF-45E5-8DB5-4EA51E2162A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CFCE7B4-F6FF-45E5-8DB5-4EA51E2162A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CB1AE2-C466-4A1E-AFD3-2E2BF7DEB795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CB1AE2-C466-4A1E-AFD3-2E2BF7DEB795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CB1AE2-C466-4A1E-AFD3-2E2BF7DEB795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CB1AE2-C466-4A1E-AFD3-2E2BF7DEB795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6CF2663-6F09-4915-A3EE-0726CD52FF0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6CF2663-6F09-4915-A3EE-0726CD52FF0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6CF2663-6F09-4915-A3EE-0726CD52FF0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6CF2663-6F09-4915-A3EE-0726CD52FF0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
