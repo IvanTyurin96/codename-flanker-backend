@@ -11,11 +11,15 @@ namespace CodenameFlanker.WebApi.Controllers;
 [Route("v1/[controller]")]
 public class ScreenshotsController : ControllerBase
 {
+    private readonly ILogger<ScreenshotsController> _logger;
     private readonly ScreenshotsService _screenshotsService;
     private readonly IWebHostEnvironment _webHostEnvironment;
 
-    public ScreenshotsController(ScreenshotsService screenshotsService, IWebHostEnvironment webHostEnvironment)
+    public ScreenshotsController(ILogger<ScreenshotsController> logger,
+        ScreenshotsService screenshotsService,
+        IWebHostEnvironment webHostEnvironment)
     {
+        _logger = logger;
         _screenshotsService = screenshotsService;
         _webHostEnvironment = webHostEnvironment;
     }
