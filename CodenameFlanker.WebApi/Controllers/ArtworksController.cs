@@ -34,7 +34,7 @@ public class ArtworksController : ControllerBase
 		foreach (var artwork in artworks)
 		{
 			string base64 = ImageBase64Converter.Convert(Path.Combine(_webHostEnvironment.WebRootPath, "artworks", artwork.Thumbnail));
-			ListedArtworkDto dto = new ListedArtworkDto(artwork.Id, artwork.Name, base64, artwork.ArtistId);
+			ListedArtworkDto dto = new ListedArtworkDto(artwork.Id, artwork.Name, artwork.Thumbnail, base64, artwork.ArtistId);
 			dtoList.Add(dto);
 		}
 
@@ -62,8 +62,8 @@ public class ArtworksController : ControllerBase
 		}
 
 		string artistBase64 = ImageBase64Converter.Convert(Path.Combine(_webHostEnvironment.WebRootPath, "artists", artwork.Artist.Icon));
-		ArtistDto artist = new ArtistDto(artwork.Artist.Id, artwork.Artist.Name, artwork.Artist.Icon, artistBase64, artwork.Artist.Role);
-		ArtworkDto artworkDto = new ArtworkDto(artwork.Id, artwork.Name, artwork.ArtistId, artwork.Description, dtoList, artist);
+		ArtistDto artistDto = new ArtistDto(artwork.Artist.Id, artwork.Artist.Name, artwork.Artist.Icon, artistBase64, artwork.Artist.Role);
+		ArtworkDto artworkDto = new ArtworkDto(artwork.Id, artwork.Name, dtoList, artistDto, artwork.Description);
 		return Ok(artworkDto);
 	}
 }

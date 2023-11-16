@@ -7,8 +7,7 @@ public record ArtworkDto
 (
 	int Id,
 	string Name,
-	int ArtistId,
-	string Description,
 	List<ImageDto> Images,
-	ArtistDto Artist
+	ArtistDto Artist,
+	string Description
 );

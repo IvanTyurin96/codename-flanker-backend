@@ -4,6 +4,7 @@ public record ListedArtworkDto
 (
     int Id,
     string Name,
-    string ThumbnailBytes,
+	string Thumbnail,
+	string ThumbnailBytes,
     int ArtistId
 );
