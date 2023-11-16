@@ -11,15 +11,11 @@ namespace CodenameFlanker.WebApi.Controllers;
 [Route("v1/[controller]")]
 public class ScreenshotsController : ControllerBase
 {
-    private readonly ILogger<ScreenshotsController> _logger;
     private readonly ScreenshotsService _screenshotsService;
     private readonly IWebHostEnvironment _webHostEnvironment;
 
-    public ScreenshotsController(ILogger<ScreenshotsController> logger,
-        ScreenshotsService screenshotsService,
-        IWebHostEnvironment webHostEnvironment)
+    public ScreenshotsController(ScreenshotsService screenshotsService, IWebHostEnvironment webHostEnvironment)
     {
-        _logger = logger;
         _screenshotsService = screenshotsService;
         _webHostEnvironment = webHostEnvironment;
     }
@@ -28,7 +24,8 @@ public class ScreenshotsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> Get()
     {
-        List<Screenshot> screenshots = await _screenshotsService.GetScreenshots();
+		Thread.Sleep(2000);
+		List<Screenshot> screenshots = await _screenshotsService.GetScreenshots();
 
         List<ScreenshotDto> dtoList = new List<ScreenshotDto>();
 

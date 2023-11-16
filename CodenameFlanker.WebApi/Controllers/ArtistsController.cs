@@ -24,7 +24,8 @@ public class ArtistsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> Get()
     {
-        List<Artist> artists = await _artistsService.GetArtists();
+		Thread.Sleep(5000);
+		List<Artist> artists = await _artistsService.GetArtists();
 
         List<ArtistDto> listDto = new List<ArtistDto>();
         foreach (var artist in artists) 

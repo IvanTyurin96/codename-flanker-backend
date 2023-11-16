@@ -20,4 +20,15 @@ public class ArtworksService
 
         return artworks;
     }
+
+	public async Task<Artwork?> GetArtworkById(int id)
+	{
+		Artwork? artwork = await _dbContext.Artworks.AsNoTracking()
+            .Where(x => x.Id == id)
+            .Include(x => x.Artist)
+            .Include(x => x.Images)
+            .FirstOrDefaultAsync();
+
+		return artwork;
+	}
 }

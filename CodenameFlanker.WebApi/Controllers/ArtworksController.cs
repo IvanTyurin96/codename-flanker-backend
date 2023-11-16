@@ -1,11 +1,10 @@
-﻿using CodenameFlanker.Contracts.Artworks.Dto;
-using CodenameFlanker.Data;
+﻿using CodenameFlanker.Contracts.Artists.Dto;
+using CodenameFlanker.Contracts.Artworks.Dto;
+using CodenameFlanker.Contracts.Images.Dto;
 using CodenameFlanker.Data.Entities;
 using CodenameFlanker.Services.Artworks;
 using CodenameFlanker.WebApi.Helpers;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Net.Mime;
 
 namespace CodenameFlanker.WebApi.Controllers;
@@ -19,25 +18,52 @@ public class ArtworksController : ControllerBase
 
 	public ArtworksController(ArtworksService artworksService, IWebHostEnvironment webHostEnvironment)
 	{
-        _artworksService = artworksService;
+		_artworksService = artworksService;
 		_webHostEnvironment = webHostEnvironment;
 	}
 
-    [HttpGet]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    public async Task<IActionResult> Get()
+	[HttpGet]
+	[ProducesResponseType(StatusCodes.Status200OK)]
+	public async Task<IActionResult> Get()
 	{
-        List<Artwork> artworks = await _artworksService.GetArtworks();
+		Thread.Sleep(2000);
+		List<Artwork> artworks = await _artworksService.GetArtworks();
 
-		List<ArtworkDto> dtoList = new List<ArtworkDto>();
+		List<ListedArtworkDto> dtoList = new List<ListedArtworkDto>();
 
-		foreach(var artwork in artworks) 
+		foreach (var artwork in artworks)
 		{
 			string base64 = ImageBase64Converter.Convert(Path.Combine(_webHostEnvironment.WebRootPath, "artworks", artwork.Thumbnail));
-			ArtworkDto dto = new ArtworkDto(artwork.Id, artwork.Name, artwork.Thumbnail, base64, artwork.ArtistId, artwork.Description);
+			ListedArtworkDto dto = new ListedArtworkDto(artwork.Id, artwork.Name, base64, artwork.ArtistId);
 			dtoList.Add(dto);
 		}
 
-        return Ok(dtoList);
+		return Ok(dtoList);
+	}
+
+	[HttpGet("{id:int:min(1)}")]
+	[ProducesResponseType(StatusCodes.Status404NotFound)]
+	[ProducesResponseType(StatusCodes.Status200OK)]
+	public async Task<IActionResult> GetById([FromRoute] int id)
+	{
+		Thread.Sleep(2000);
+		Artwork artwork = await _artworksService.GetArtworkById(id);
+
+		if (artwork == null)
+			return NotFound($"Artwork with id = {id} not found.");
+
+		List<ImageDto> dtoList = new List<ImageDto>();
+
+		foreach (Image image in artwork.Images)
+		{
+			string base64 = ImageBase64Converter.Convert(Path.Combine(_webHostEnvironment.WebRootPath, "artworks", image.Path));
+			ImageDto imageDto = new ImageDto(base64, image.Description);
+			dtoList.Add(imageDto);
+		}
+
+		string artistBase64 = ImageBase64Converter.Convert(Path.Combine(_webHostEnvironment.WebRootPath, "artists", artwork.Artist.Icon));
+		ArtistDto artist = new ArtistDto(artwork.Artist.Id, artwork.Artist.Name, artwork.Artist.Icon, artistBase64, artwork.Artist.Role);
+		ArtworkDto artworkDto = new ArtworkDto(artwork.Id, artwork.Name, artwork.ArtistId, artwork.Description, dtoList, artist);
+		return Ok(artworkDto);
 	}
 }
