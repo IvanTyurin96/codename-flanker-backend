@@ -1,12 +1,10 @@
 using CodenameFlanker.Data;
-using Microsoft.EntityFrameworkCore;
-using CodenameFlanker.Services.Screenshots.Extensions;
-using CodenameFlanker.Services.Patchnotes.Extensions;
-using CodenameFlanker.Services.Artworks.Extensions;
 using CodenameFlanker.Services.Artists.Extensions;
-using CodenameFlanker.WebApi.Handlers;
+using CodenameFlanker.Services.Artworks.Extensions;
+using CodenameFlanker.Services.Patchnotes.Extensions;
+using CodenameFlanker.Services.Screenshots.Extensions;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
-using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
