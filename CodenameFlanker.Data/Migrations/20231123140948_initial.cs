@@ -14,7 +14,7 @@ namespace CodenameFlanker.Data.Migrations
                 name: "Artist",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "INTEGER", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     Icon = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     Role = table.Column<string>(type: "nvarchar(255)", nullable: false)
@@ -28,7 +28,7 @@ namespace CodenameFlanker.Data.Migrations
                 name: "Patchnote",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "INTEGER", nullable: false),
                     Version = table.Column<string>(type: "nvarchar(255)", nullable: false)
                 },
                 constraints: table =>
@@ -40,8 +40,8 @@ namespace CodenameFlanker.Data.Migrations
                 name: "Screenshot",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
                     Path = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     Thumbnail = table.Column<string>(type: "nvarchar(255)", nullable: false)
                 },
@@ -54,7 +54,7 @@ namespace CodenameFlanker.Data.Migrations
                 name: "Artwork",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false),
+                    Id = table.Column<int>(type: "INTEGER", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     Thumbnail = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     ArtistId = table.Column<int>(type: "int", nullable: false),
@@ -75,8 +75,8 @@ namespace CodenameFlanker.Data.Migrations
                 name: "PatchnoteChange",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     Change = table.Column<string>(type: "nvarchar(2000)", nullable: false),
                     PatchnoteId = table.Column<int>(type: "int", nullable: false)
@@ -96,11 +96,11 @@ namespace CodenameFlanker.Data.Migrations
                 name: "Image",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
                     Path = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(255)", nullable: false),
-                    ArtworkId = table.Column<int>(type: "int", nullable: false)
+                    ArtworkId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

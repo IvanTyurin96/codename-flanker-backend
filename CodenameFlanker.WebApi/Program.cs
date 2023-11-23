@@ -6,13 +6,14 @@ using CodenameFlanker.Services.Artworks.Extensions;
 using CodenameFlanker.Services.Artists.Extensions;
 using CodenameFlanker.WebApi.Handlers;
 using Serilog;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+string path = System.IO.Path.Combine(System.Environment.CurrentDirectory, "CodenameFlanker.db");
 builder.Services.AddDbContext<CodenameFlankerDbContext>(
-	options => options.UseSqlServer(builder.Configuration.GetConnectionString("CodenameFlanker")));
+	options => options.UseSqlite($"Filename={path}"));
 
 var logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)

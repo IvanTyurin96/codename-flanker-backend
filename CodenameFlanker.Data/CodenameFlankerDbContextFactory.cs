@@ -1,5 +1,4 @@
-﻿using CodenameFlanker.Data.Helpers;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace CodenameFlanker.Data;
@@ -9,10 +8,11 @@ public class CodenameFlankerDbContextFactory : IDesignTimeDbContextFactory<Coden
 	public CodenameFlankerDbContext CreateDbContext(string[] args)
 	{
 		string jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "migrationSettings.json");
-		string connectionString = JsonParser.GetConnectionString("CodenameFlanker", jsonPath);
 
 		var optionsBuilder = new DbContextOptionsBuilder<CodenameFlankerDbContext>();
-		optionsBuilder.UseSqlServer(connectionString);
+
+		string path = System.IO.Path.Combine(System.Environment.CurrentDirectory, "CodenameFlanker.db");
+		optionsBuilder.UseSqlite($"Filename={path}");
 		return new CodenameFlankerDbContext(optionsBuilder.Options);
 	}
 }
