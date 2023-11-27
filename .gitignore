@@ -1,0 +1,10 @@
+.vs
+CodenameFlanker.Contracts/bin
+CodenameFlanker.Contracts/obj
+CodenameFlanker.Services/bin
+CodenameFlanker.Services/obj
+CodenameFlanker.Data/bin
+CodenameFlanker.Data/obj
+CodenameFlanker.WebApi/bin
+CodenameFlanker.WebApi/obj
+logs

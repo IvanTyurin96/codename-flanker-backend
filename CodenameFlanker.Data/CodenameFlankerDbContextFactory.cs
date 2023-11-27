@@ -7,8 +7,6 @@ public class CodenameFlankerDbContextFactory : IDesignTimeDbContextFactory<Coden
 {
 	public CodenameFlankerDbContext CreateDbContext(string[] args)
 	{
-		string jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "migrationSettings.json");
-
 		var optionsBuilder = new DbContextOptionsBuilder<CodenameFlankerDbContext>();
 
 		string path = System.IO.Path.Combine(System.Environment.CurrentDirectory, "CodenameFlanker.db");
