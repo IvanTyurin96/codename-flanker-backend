@@ -26,7 +26,6 @@ public class ArtworksController : ControllerBase
 	[ProducesResponseType(StatusCodes.Status200OK)]
 	public async Task<IActionResult> Get()
 	{
-		Thread.Sleep(2000);
 		List<Artwork> artworks = await _artworksService.GetArtworks();
 
 		List<ListedArtworkDto> dtoList = new List<ListedArtworkDto>();

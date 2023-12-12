@@ -20,7 +20,6 @@ public class PatchnotesController : ControllerBase
 	[ProducesResponseType(StatusCodes.Status200OK)]
 	public async Task<IActionResult> Get()
 	{
-		Thread.Sleep(2000);
 		List<Patchnote> patchnotes = await _patchnotesService.GetPatchnotes();
 
         return Ok(patchnotes);

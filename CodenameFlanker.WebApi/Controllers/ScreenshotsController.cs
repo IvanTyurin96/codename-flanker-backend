@@ -24,7 +24,6 @@ public class ScreenshotsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> Get()
     {
-		Thread.Sleep(2000);
 		List<Screenshot> screenshots = await _screenshotsService.GetScreenshots();
 
         List<ScreenshotDto> dtoList = new List<ScreenshotDto>();
