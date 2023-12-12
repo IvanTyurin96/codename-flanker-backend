@@ -45,7 +45,6 @@ public class ArtworksController : ControllerBase
 	[ProducesResponseType(StatusCodes.Status200OK)]
 	public async Task<IActionResult> GetById([FromRoute] int id)
 	{
-		Thread.Sleep(2000);
 		Artwork artwork = await _artworksService.GetArtworkById(id);
 
 		if (artwork == null)
