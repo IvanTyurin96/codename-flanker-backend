@@ -124,10 +124,4 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="CodenameFlanker.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

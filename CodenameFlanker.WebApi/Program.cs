@@ -9,7 +9,7 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-string path = System.IO.Path.Combine(System.Environment.CurrentDirectory, "CodenameFlanker.db");
+string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CodenameFlanker.db");
 builder.Services.AddDbContext<CodenameFlankerDbContext>(
 	options => options.UseSqlite($"Filename={path}"));
 
