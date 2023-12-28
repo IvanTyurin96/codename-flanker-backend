@@ -1,7 +1,4 @@
-﻿using CodenameFlanker.WebApi.Controllers;
-using System.Text.Json;
-
-namespace CodenameFlanker.WebApi.Handlers;
+﻿namespace CodenameFlanker.WebApi.Handlers;
 
 public class ExceptionHandlerMiddleware
 {
@@ -19,6 +16,16 @@ public class ExceptionHandlerMiddleware
         try
         {
             await _next(context);
+
+            if(context.RequestAborted.IsCancellationRequested)
+                throw new TaskCanceledException("Request timeout");
+        }
+        catch (TaskCanceledException exception)
+        {
+            HttpResponse response = context.Response;
+            response.ContentType = "application/json";
+            response.StatusCode = 504;
+            _logger.LogError(exception.Message);
         }
         catch (Exception exception)
         {

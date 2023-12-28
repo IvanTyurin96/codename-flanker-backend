@@ -20,6 +20,8 @@ var logger = new LoggerConfiguration()
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
+builder.Services.AddRequestTimeouts();
+
 builder.Services.AddArtworksService();
 builder.Services.AddPatchnotesService();
 builder.Services.AddScreenshotsService();
@@ -33,6 +35,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors();
 
 var app = builder.Build();
+app.UseRequestTimeouts();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -52,6 +55,6 @@ app.UseCors(cors => cors
 
 app.UseMiddleware<CodenameFlanker.WebApi.Handlers.ExceptionHandlerMiddleware>();
 
-app.MapControllers();
+app.MapControllers().WithRequestTimeout(TimeSpan.FromMilliseconds(10000));
 
 app.Run();
