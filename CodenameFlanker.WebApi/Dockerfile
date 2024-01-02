@@ -1,11 +1,11 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 81
 ENV ASPNETCORE_URLS=http://+:81
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["CodenameFlanker.WebApi/CodenameFlanker.WebApi.csproj", "CodenameFlanker.WebApi/"]
 COPY ["CodenameFlanker.Contracts/CodenameFlanker.Contracts.csproj", "CodenameFlanker.Contracts/"]
