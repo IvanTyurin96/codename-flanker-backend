@@ -8,6 +8,13 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.WebHost.ConfigureKestrel((context, serverOptions) =>
+{
+	var kestrelSection = context.Configuration.GetSection("Kestrel");
+	serverOptions.Configure(kestrelSection);
+});
+
 // Add services to the container.
 string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "CodenameFlanker.db");
 builder.Services.AddDbContext<CodenameFlankerDbContext>(
@@ -43,10 +50,10 @@ if (app.Environment.IsDevelopment())
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
-//app.UseHsts();
+app.UseHsts();
 app.UseStaticFiles();
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.UseCors(cors => cors
 	.AllowAnyMethod()
