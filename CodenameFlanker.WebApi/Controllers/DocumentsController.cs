@@ -15,23 +15,17 @@ public class DocumentsController : ControllerBase
 	[HttpGet]
 	[ProducesResponseType(StatusCodes.Status404NotFound)]
 	[ProducesResponseType(StatusCodes.Status200OK)]
-	public async Task<IActionResult> Get([FromQuery] string language)
+	public IActionResult Get([FromQuery] string language)
 	{
 		if (String.IsNullOrWhiteSpace(language) || (language.ToLower() != "en" && language.ToLower() != "ru"))
 			return NotFound("Documentation for this language not found.");
 
-		byte[] bytes;
 		string selectedFile = language.ToLower() == "en" ? "Su-30 EFM Documentation EN.pdf" : "Su-30 EFM Documentation RU.pdf";
 		string path = Path.Combine(_webHostEnvironment.WebRootPath, "docs", selectedFile);
-		using (FileStream stream = System.IO.File.Open(path, FileMode.Open))
-		{
-			bytes = new byte[stream.Length];
-			await stream.ReadAsync(bytes, 0, (int)stream.Length);
-		}
 
 		string fileType = "application/pdf";
 		string fileName = Path.GetFileName(path);
 
-		return File(bytes, fileType, fileName);
+		return PhysicalFile(path, fileType, fileName);
 	}
 }
