@@ -17,10 +17,19 @@ public class DocumentsController : ControllerBase
 	[ProducesResponseType(StatusCodes.Status200OK)]
 	public IActionResult Get([FromQuery] string language)
 	{
-		if (String.IsNullOrWhiteSpace(language) || (language.ToLower() != "en" && language.ToLower() != "ru"))
-			return NotFound("Documentation for this language not found.");
+		string selectedFile;
+		switch (language)
+		{
+			case "en":
+				selectedFile = "Su-30 EFM Documentation EN.pdf";
+				break;
+			case "ru":
+				selectedFile = "Su-30 EFM Documentation RU.pdf";
+				break;
+			default:
+				return NotFound("Documentation for this language not found.");
+		}
 
-		string selectedFile = language.ToLower() == "en" ? "Su-30 EFM Documentation EN.pdf" : "Su-30 EFM Documentation RU.pdf";
 		string path = Path.Combine(_webHostEnvironment.WebRootPath, "docs", selectedFile);
 
 		string fileType = "application/pdf";
