@@ -563,6 +563,51 @@
       ],
       "ArtistId": 1,
       "Description": "This is first fiction weapon in my weapon pack based on FAB-500 M-62 and Mk-82 Snakeye. I was inspired by Mk-82 umbrella brake and wanted to make something similar in Soviet bombs.\nThis model animated and have LODS.\nTriangles count:\nBase model: 12752\nLOD_0 (~82% polygons): 10816\nLOD_1 (~65% polygons): 8442\nLOD_2 (~47% polygons): 5894\nLOD_3 (~30% polygons): 3242\nModel have one material and texture 2048x2048.\nBase model and LODS are skinned by bones (bones control deployable umbrella system of bomb).\nThis model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>"
+    },
+    {
+      "Id": 31,
+      "Name": "R-27EA",
+      "Thumbnail": "R-27EA_thumbnail.jpg",
+      "Images": [
+        {
+          "Path": "R-27EA_1.jpg",
+          "Description": "" 
+        },
+        {
+          "Path": "R-27EA_2.jpg",
+          "Description": ""
+        },
+        {
+          "Path": "R-27EA_3.jpg",
+          "Description": ""
+        },
+        {
+          "Path": "R-27EA_4.jpg",
+          "Description": ""
+        },
+        {
+          "Path": "R-27EA_5.jpg",
+          "Description": ""
+        },
+        {
+          "Path": "R-27EA_6.jpg",
+          "Description": ""
+        },
+        {
+          "Path": "R-27EA_7.jpg",
+          "Description": ""
+        },
+        {
+          "Path": "R-27EA_8.jpg",
+          "Description": ""
+        },
+        {
+          "Path": "R-27EA_9.jpg",
+          "Description": ""
+        }
+      ],
+      "ArtistId": 1,
+      "Description": "3D model of Russian air-to-air missile R-27EA.\nTriangles count:\nBase model: 12138\nLOD_0 (~82% polygons): 9891\nLOD_1 (~65% polygons): 7994\nLOD_2 (~47% polygons): 5742\nLOD_3 (~30% polygons): 2936\nLOD_4 (~15% polygons): 1368\nLOD_5 (~5% polygons): 584\nModel have one material and one texture set 2048x2048.\nThis model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>"
     }
   ],
   "Artists": [
