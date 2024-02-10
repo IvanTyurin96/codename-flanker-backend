@@ -1,6 +1,8 @@
 ﻿using CodenameFlanker.Data.Entities;
 using CodenameFlanker.Data.Helpers;
 using Microsoft.EntityFrameworkCore.Migrations;
+using System.Linq;
+
 
 #nullable disable
 
@@ -24,6 +26,18 @@ namespace CodenameFlanker.Data.Migrations
 			List<Artwork> artworks = JsonParser.ParseSection<Artwork>("Artworks", jsonFile);
 			foreach (Artwork artwork in artworks)
 			{
+				string anchor = "https://";
+				string anchorEnd = " ";
+				if (artwork.Description.Contains(anchor))
+				{
+					string anchorPart = $"{anchor}{artwork.Description
+						.Split(anchor)
+						.Last()
+						.Split(anchorEnd)
+						.First()}";
+					artwork.Description = artwork.Description.Replace(anchorPart, $"<a className=''link-primary'' target=''_blank'' href=''{anchorPart}''>{anchorPart}</a>");
+				}
+
 				migrationBuilder.Sql(@$"INSERT INTO Artwork (Id, Name, Thumbnail, ArtistId, Description)
 										VALUES ({artwork.Id}, '{artwork.Name}', '{artwork.Thumbnail}', '{artwork.ArtistId}','{artwork.Description}')");
 				foreach (Image image in artwork.Images)

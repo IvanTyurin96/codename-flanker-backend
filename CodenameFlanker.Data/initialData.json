@@ -19,7 +19,7 @@
         { "Path": "R-27T_13.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian air-to-air missile R-27T. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 6835\nTriangles: 13304"
+      "Description": "3D model of Russian air-to-air missile R-27T.\r\nTriangles count:\r\nBase model: 11910\r\nLOD_0 (~82% polygons): 9548\r\nLOD_1 (~65% polygons): 7718\r\nLOD_2 (~47% polygons): 5426\r\nLOD_3 (~30% polygons): 3296\r\nLOD_4 (~15% polygons): 1384\r\nLOD_5 (~5% polygons): 632\r\nModel have one material and one texture set 2048x2048.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 2,
@@ -37,7 +37,7 @@
         { "Path": "R-27P_10.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian air-to-air missile R-27P. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 6715\nTriangles: 13064"
+      "Description": "3D model of Russian air-to-air missile R-27P.\r\nTriangles count:\r\nBase model: 11670\r\nLOD_0 (~82% polygons): 9308\r\nLOD_1 (~65% polygons): 7574\r\nLOD_2 (~47% polygons): 5426\r\nLOD_3 (~30% polygons): 3368\r\nLOD_4 (~15% polygons): 1456\r\nLOD_5 (~5% polygons): 696\r\nModel have one material and one texture set 2048x2048.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75\r\n\r\n"
     },
     {
       "Id": 3,
@@ -55,7 +55,7 @@
         { "Path": "R-27EP_10.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian air-to-air missile R-27EP. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 6427\nTriangles: 12524"
+      "Description": "3D model of Russian air-to-air missile R-27EP.\r\nTriangles count:\r\nBase model: 11192\r\nLOD_0 (~82% polygons): 8943\r\nLOD_1 (~65% polygons): 7190\r\nLOD_2 (~47% polygons): 5138\r\nLOD_3 (~30% polygons): 3120\r\nLOD_4 (~15% polygons): 1440\r\nLOD_5 (~5% polygons): 600\r\nModel have one material and one texture set 2048x2048.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 4,
@@ -79,7 +79,7 @@
         { "Path": "R-27ER_16.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian air-to-air missile R-27ER. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 7523\nTriangles: 14376"
+      "Description": "3D model of Russian air-to-air missile R-27ER.\r\nTriangles count:\r\nBase model: 12762\r\nLOD_0 (~82% polygons): 10515\r\nLOD_1 (~65% polygons): 8186\r\nLOD_2 (~47% polygons): 5838\r\nLOD_3 (~30% polygons): 3032\r\nLOD_4 (~15% polygons): 1440\r\nLOD_5 (~5% polygons): 600\r\nModel have one material and one texture set 2048x2048.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 5,
@@ -103,7 +103,7 @@
         { "Path": "R-27R_16.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian air-to-air missile R-27R. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 7815\nTriangles: 14932"
+      "Description": "3D model of Russian air-to-air missile R-27R.\r\nTriangles count:\r\nBase model: 13416\r\nLOD_0 (~82% polygons): 11054\r\nLOD_1 (~65% polygons): 8744\r\nLOD_2 (~47% polygons): 6236\r\nLOD_3 (~30% polygons): 3392\r\nLOD_4 (~15% polygons): 1456\r\nLOD_5 (~5% polygons): 696\r\nModel have one material and one texture set 2048x2048.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 6,
@@ -124,7 +124,7 @@
         { "Path": "R-27ET_13.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian air-to-air missile R-27ET. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 6547\nTriangles: 12764"
+      "Description": "3D model of Russian air-to-air missile R-27ET.\r\nTriangles count:\r\nBase model: 11432\r\nLOD_0 (~82% polygons): 9183\r\nLOD_1 (~65% polygons): 7334\r\nLOD_2 (~47% polygons): 5138\r\nLOD_3 (~30% polygons): 3048\r\nLOD_4 (~15% polygons): 1368\r\nLOD_5 (~5% polygons): 552\r\nModel have one material and one texture set 2048x2048.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 7,
@@ -141,7 +141,7 @@
         { "Path": "FAB-250_M-62_9.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian unguided bomb FAB-250 M-62. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 2482\nTriangles: 5148"
+      "Description": "3D model of Russian unguided bomb FAB-250 M-62.\r\nTriangles count:\r\nBase model: 5084\r\nLOD_0 (~82% polygons): 4348\r\nLOD_1 (~65% polygons): 3450\r\nLOD_2 (~47% polygons): 2308\r\nLOD_3 (~30% polygons): 1640\r\nLOD_4 (~15% polygons): 742\r\nLOD_5 (~5% polygons): 344\r\nModel have one material and one texture set 2048x2048.\r\nBase model of bomb and LODS consist from two parts - bomb hull and detachable object. Detachable object - rope from nose detonator to pylon. Only last LOD (~5%) have no detachable object and consist only from bomb hull.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 8,
@@ -159,7 +159,7 @@
         { "Path": "FAB-500_M-54_10.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian unguided bomb FAB-500 M-54. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 4566\nTriangles: 9368"
+      "Description": "3D model of Russian unguided bomb FAB-500 M-54.\r\nTriangles count:\r\nBase model: 9240\r\nLOD_0 (~82% polygons): 7756\r\nLOD_1 (~65% polygons): 6076\r\nLOD_2 (~47% polygons): 4116\r\nLOD_3 (~30% polygons): 2780\r\nLOD_4 (~15% polygons): 1384\r\nLOD_5 (~5% polygons): 504\r\nModel have one material and one texture set 2048x2048.\r\nBase model of bomb and LODS consist from two parts - bomb hull and detachable object. Detachable object - ropes from nose and rear detonators to pylon. Only last LOD (~5%) have no detachable object and consist only from bomb hull.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75\r\n\r\n"
     },
     {
       "Id": 9,
@@ -179,7 +179,7 @@
         { "Path": "FAB-500_M-62_11.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian unguided bomb FAB-500 M-62. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 3178\nTriangles: 6516"
+      "Description": "3D model of Russian unguided bomb FAB-500 M-62.\r\nTriangles count:\r\nBase model: 6392\r\nLOD_0 (~82% polygons): 5384\r\nLOD_1 (~65% polygons): 4334\r\nLOD_2 (~47% polygons): 2958\r\nLOD_3 (~30% polygons): 2054\r\nLOD_4 (~15% polygons): 1028\r\nLOD_5 (~5% polygons): 328\r\nModel have one material and one texture set 2048x2048.\r\nBase model of bomb and LODS consist from two parts - bomb hull and detachable object. Detachable object - ropes from nose and rear detonators to pylon. Only last LOD (~5%) have no detachable object and consist only from bomb hull.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 10,
@@ -196,7 +196,7 @@
         { "Path": "OFAB-100-120_9.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian unguided bomb OFAB-100-120. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 3974\nTriangles: 8268"
+      "Description": "3D model of Russian unguided bomb OFAB-100-120.\r\nTriangles count:\r\nBase model: 8184\r\nLOD_0 (~82% polygons): 6876\r\nLOD_1 (~65% polygons): 5304\r\nLOD_2 (~47% polygons): 3576\r\nLOD_3 (~30% polygons): 2240\r\nLOD_4 (~15% polygons): 1168\r\nLOD_5 (~5% polygons): 432\r\nModel have one material and one texture set 2048x2048.\r\nBase model of bomb and LODS consist from two parts - bomb hull and detachable object. Detachable object - ropes from nose and rear detonators to pylon. Only last LOD (~5%) have no detachable object and consist only from bomb hull.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 11,
@@ -213,7 +213,7 @@
         { "Path": "OFAB-100-120_9.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian unguided bomb OFAB-250-270. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 4444\nTriangles: 9208"
+      "Description": "3D model of Russian unguided bomb OFAB-250-270.\r\nTriangles count:\r\nBase model: 9088\r\nLOD_0 (~82% polygons): 7608\r\nLOD_1 (~65% polygons): 5876\r\nLOD_2 (~47% polygons): 4004\r\nLOD_3 (~30% polygons): 2668\r\nLOD_4 (~15% polygons): 1288\r\nLOD_5 (~5% polygons): 496\r\nModel have one material and one texture set 2048x2048.\r\nBase model of bomb and LODS consist from two parts - bomb hull and detachable object. Detachable object - ropes from nose and rear detonators to pylon. Only last LOD (~5%) have no detachable object and consist only from bomb hull.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 12,
@@ -539,7 +539,7 @@
         { "Path": "R-77_14.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian air-to-air missile R-77. This model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>\nModel have one material and one texture 2048x2048.\nModel characteristics:\nPolygons: 5641\nTriangles: 12494"
+      "Description": "Top missile of Russian Aircraft Armament pack.\r\nTriangles count:\r\nBase model: 11870\r\nLOD_0 (~82% polygons): 9694\r\nLOD_1 (~65% polygons): 7700\r\nLOD_2 (~47% polygons): 5692\r\nLOD_3 (~30% polygons): 3280\r\nLOD_4 (~15% polygons): 1432\r\nLOD_5 (~5% polygons): 600\r\nModel have one material and one texture set 2048x2048.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     },
     {
       "Id": 30,
@@ -562,7 +562,7 @@
         { "Path": "FAB-500_M-62NV_15.jpg", "Description": "" }
       ],
       "ArtistId": 1,
-      "Description": "This is first fiction weapon in my weapon pack based on FAB-500 M-62 and Mk-82 Snakeye. I was inspired by Mk-82 umbrella brake and wanted to make something similar in Soviet bombs.\nThis model animated and have LODS.\nTriangles count:\nBase model: 12752\nLOD_0 (~82% polygons): 10816\nLOD_1 (~65% polygons): 8442\nLOD_2 (~47% polygons): 5894\nLOD_3 (~30% polygons): 3242\nModel have one material and texture 2048x2048.\nBase model and LODS are skinned by bones (bones control deployable umbrella system of bomb).\nThis model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>"
+      "Description": "This is first fiction weapon in my weapon pack based on FAB-500 M-62 and Mk-82 Snakeye. I was inspired by Mk-82 umbrella brake and wanted to make something similar in Soviet bombs.\r\nThis model animated and have LODS.\r\nTriangles count:\r\nBase model: 12688\r\nLOD_0 (~82% polygons): 10768\r\nLOD_1 (~65% polygons): 8406\r\nLOD_2 (~47% polygons): 5858\r\nLOD_3 (~30% polygons): 3206\r\nLOD_4 (~15% polygons): 1732\r\nLOD_5 (~5% polygons): 488\r\nModel have one material and one texture set 2048x2048.\r\nBase model and all LODS are skinned by bones (bones control deployable umbrella system of bomb).\r\nBase model of bomb and LODS consist from two parts - bomb hull and detachable object. Detachable object - rope from nose detonator to pylon. Only last LOD (~5%) have no detachable object and consist only from bomb hull.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75\r\n\r\n"
     },
     {
       "Id": 31,
@@ -607,7 +607,7 @@
         }
       ],
       "ArtistId": 1,
-      "Description": "3D model of Russian air-to-air missile R-27EA.\nTriangles count:\nBase model: 12138\nLOD_0 (~82% polygons): 9891\nLOD_1 (~65% polygons): 7994\nLOD_2 (~47% polygons): 5742\nLOD_3 (~30% polygons): 2936\nLOD_4 (~15% polygons): 1368\nLOD_5 (~5% polygons): 584\nModel have one material and one texture set 2048x2048.\nThis model have been created for DCS World Community Su-30 Mod. Project details: <a className=''link-primary'' target=''_blank'' href=''https://discord.gg/sbw8A5Mg75''>https://discord.gg/sbw8A5Mg75</a>"
+      "Description": "3D model of Russian air-to-air missile R-27EA.\r\nTriangles count:\r\nBase model: 12138\r\nLOD_0 (~82% polygons): 9891\r\nLOD_1 (~65% polygons): 7994\r\nLOD_2 (~47% polygons): 5742\r\nLOD_3 (~30% polygons): 2936\r\nLOD_4 (~15% polygons): 1368\r\nLOD_5 (~5% polygons): 584\r\nModel have one material and one texture set 2048x2048.\r\nThis model have been created for DCS World Community Su-30 Mod. Project details: https://discord.gg/sbw8A5Mg75"
     }
   ],
   "Artists": [
