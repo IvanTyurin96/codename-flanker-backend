@@ -21,7 +21,7 @@ internal sealed class ScreenshotsController : ControllerBase
     }
 
     [HttpGet]
-    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status200OK)]//
     public async Task<IActionResult> Get()
     {
 		List<Screenshot> screenshots = await _screenshotsService.GetScreenshots();
