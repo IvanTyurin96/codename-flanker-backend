@@ -10,26 +10,23 @@ public sealed class DocumentsService
 	{
 	}
 
-	//public string GetManual(string language)
-	//{
-	//	string selectedFile;
-	//	switch (language)
-	//	{
-	//		case "en":
-	//			selectedFile = "Su-30 EFM Documentation EN.pdf";
-	//			break;
-	//		case "ru":
-	//			selectedFile = "Su-30 EFM Documentation RU.pdf";
-	//			break;
-	//		default:
-	//			throw new Exception("Documentation for this language not found.");
-	//	}
+	public async Task<byte[]> GetManual(string language)
+	{
+		string selectedFile;
+		switch (language)
+		{
+			case "en":
+				selectedFile = "Su-30 EFM Documentation EN.pdf";
+				break;
+			case "ru":
+				selectedFile = "Su-30 EFM Documentation RU.pdf";
+				break;
+			default:
+				throw new Exception("Documentation for this language not found.");
+		}
 
-	//	string path = Path.Combine(_domainDirectory, "docs", selectedFile);
-	//	byte[] byteArray = System.IO.File.ReadAllBytes(path);
-	//	string fileType = "application/pdf";
-	//	string fileName = Path.GetFileName(path);
+		string path = Path.Combine(_domainDirectory, "docs", selectedFile);
 
-	//	return new File(byteArray, fileType, fileName);
-	//}
+		return await File.ReadAllBytesAsync(path);
+	}
 }
