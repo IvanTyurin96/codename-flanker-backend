@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CodenameFlanker.Services.Artworks;
 
-public class ArtworksService
+public sealed class ArtworksService
 {
     private readonly CodenameFlankerDbContext _dbContext;
 

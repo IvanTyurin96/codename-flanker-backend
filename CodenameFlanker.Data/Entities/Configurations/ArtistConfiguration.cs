@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CodenameFlanker.Data.Entities.Configurations;
 
-internal class ArtistConfiguration : IEntityTypeConfiguration<Artist>
+internal sealed class ArtistConfiguration : IEntityTypeConfiguration<Artist>
 {
 	public void Configure(EntityTypeBuilder<Artist> builder)
 	{

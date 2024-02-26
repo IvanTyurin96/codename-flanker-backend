@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CodenameFlanker.Data.Entities.Configurations;
 
-public class ScreenshotConfiguration : IEntityTypeConfiguration<Screenshot>
+internal sealed class ScreenshotConfiguration : IEntityTypeConfiguration<Screenshot>
 {
 	public void Configure(EntityTypeBuilder<Screenshot> builder)
 	{

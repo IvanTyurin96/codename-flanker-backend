@@ -1,15 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CodenameFlanker.Services.Documents;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CodenameFlanker.WebApi.Controllers;
 
 [Route("v1/[controller]")]
-internal sealed class DocumentsController : ControllerBase
+public sealed class DocumentsController : ControllerBase
 {
 	private readonly IWebHostEnvironment _webHostEnvironment;
 
-	public DocumentsController(IWebHostEnvironment webHostEnvironment)
+	private readonly DocumentsService _documentsService;
+
+	public DocumentsController(IWebHostEnvironment webHostEnvironment, DocumentsService documentsService)
 	{
 		_webHostEnvironment = webHostEnvironment;
+		_documentsService = documentsService;
 	}
 
 	[HttpGet]

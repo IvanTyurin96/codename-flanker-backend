@@ -1,6 +1,6 @@
 ﻿namespace CodenameFlanker.Data.Entities;
 
-public class Artwork
+public sealed class Artwork
 {
 	public int Id { get; set; }
 	public string Name { get; set; }

@@ -9,7 +9,7 @@ namespace CodenameFlanker.WebApi.Controllers;
 
 [Produces(MediaTypeNames.Application.Json)]
 [Route("v1/[controller]")]
-internal sealed class ScreenshotsController : ControllerBase
+public sealed class ScreenshotsController : ControllerBase
 {
     private readonly ScreenshotsService _screenshotsService;
     private readonly IWebHostEnvironment _webHostEnvironment;
@@ -21,7 +21,7 @@ internal sealed class ScreenshotsController : ControllerBase
     }
 
     [HttpGet]
-    [ProducesResponseType(StatusCodes.Status200OK)]//
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> Get()
     {
 		List<Screenshot> screenshots = await _screenshotsService.GetScreenshots();

@@ -1,6 +1,6 @@
 ﻿namespace CodenameFlanker.Data.Entities;
 
-public class Patchnote
+public sealed class Patchnote
 {
 	public int Id { get; set; }
 	public string Version { get; set; }

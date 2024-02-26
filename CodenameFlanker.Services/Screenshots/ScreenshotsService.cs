@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CodenameFlanker.Services.Screenshots;
 
-public class ScreenshotsService
+public sealed class ScreenshotsService
 {
     private readonly CodenameFlankerDbContext _dbContext;
 

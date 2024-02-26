@@ -1,6 +1,6 @@
 ﻿namespace CodenameFlanker.Data.Entities;
 
-public class Image
+public sealed class Image
 {
 	public int Id { get; set; }
 	public string Path { get; set; }

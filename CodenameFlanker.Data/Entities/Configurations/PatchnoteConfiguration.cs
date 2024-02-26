@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CodenameFlanker.Data.Entities.Configurations;
 
-public class PatchnoteConfiguration : IEntityTypeConfiguration<Patchnote>
+internal sealed class PatchnoteConfiguration : IEntityTypeConfiguration<Patchnote>
 {
 	public void Configure(EntityTypeBuilder<Patchnote> builder)
 	{

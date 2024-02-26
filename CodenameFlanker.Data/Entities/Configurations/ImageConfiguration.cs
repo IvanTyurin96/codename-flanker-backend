@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CodenameFlanker.Data.Entities.Configurations;
 
-public class ImageConfiguration : IEntityTypeConfiguration<Image>
+internal sealed class ImageConfiguration : IEntityTypeConfiguration<Image>
 {
 	public void Configure(EntityTypeBuilder<Image> builder)
 	{

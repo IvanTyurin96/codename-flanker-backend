@@ -33,6 +33,7 @@ builder.Services.AddArtworksService();
 builder.Services.AddPatchnotesService();
 builder.Services.AddScreenshotsService();
 builder.Services.AddArtistsService();
+builder.Services.AddDocumentsService();
 
 builder.Services.AddControllers();
 builder.Services.AddRouting(options => options.LowercaseUrls = true);

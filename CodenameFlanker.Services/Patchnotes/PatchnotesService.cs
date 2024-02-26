@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CodenameFlanker.Services.Patchnotes;
 
-public class PatchnotesService
+public sealed class PatchnotesService
 {
     private readonly CodenameFlankerDbContext _dbContext;
 

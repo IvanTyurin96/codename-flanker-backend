@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-public class PatchnoteChangeConfiguration : IEntityTypeConfiguration<PatchnoteChange>
+internal sealed class PatchnoteChangeConfiguration : IEntityTypeConfiguration<PatchnoteChange>
 {
 	public void Configure(EntityTypeBuilder<PatchnoteChange> builder)
 	{
