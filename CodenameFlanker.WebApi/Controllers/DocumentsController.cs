@@ -3,7 +3,7 @@
 namespace CodenameFlanker.WebApi.Controllers;
 
 [Route("v1/[controller]")]
-public class DocumentsController : ControllerBase
+internal sealed class DocumentsController : ControllerBase
 {
 	private readonly IWebHostEnvironment _webHostEnvironment;
 

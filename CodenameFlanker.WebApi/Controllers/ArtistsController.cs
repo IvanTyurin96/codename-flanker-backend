@@ -9,7 +9,7 @@ namespace CodenameFlanker.WebApi.Controllers;
 
 [Produces(MediaTypeNames.Application.Json)]
 [Route("v1/[controller]")]
-public class ArtistsController : ControllerBase
+internal sealed class ArtistsController : ControllerBase
 {
     private readonly ArtistsService _artistsService;
     private readonly IWebHostEnvironment _webHostEnvironment;

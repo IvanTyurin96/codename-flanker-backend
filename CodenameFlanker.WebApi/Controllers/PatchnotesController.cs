@@ -7,7 +7,7 @@ namespace CodenameFlanker.WebApi.Controllers;
 
 [Produces(MediaTypeNames.Application.Json)]
 [Route("v1/[controller]")]
-public class PatchnotesController : ControllerBase
+internal sealed class PatchnotesController : ControllerBase
 {
 	private readonly PatchnotesService _patchnotesService;
 

@@ -11,7 +11,7 @@ namespace CodenameFlanker.WebApi.Controllers;
 
 [Produces(MediaTypeNames.Application.Json)]
 [Route("v1/[controller]")]
-public class ArtworksController : ControllerBase
+internal sealed class ArtworksController : ControllerBase
 {
 	private readonly ArtworksService _artworksService;
 	private readonly IWebHostEnvironment _webHostEnvironment;

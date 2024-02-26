@@ -9,7 +9,7 @@ namespace CodenameFlanker.WebApi.Controllers;
 
 [Produces(MediaTypeNames.Application.Json)]
 [Route("v1/[controller]")]
-public class ScreenshotsController : ControllerBase
+internal sealed class ScreenshotsController : ControllerBase
 {
     private readonly ScreenshotsService _screenshotsService;
     private readonly IWebHostEnvironment _webHostEnvironment;
