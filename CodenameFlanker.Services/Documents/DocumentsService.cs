@@ -10,23 +10,25 @@ public sealed class DocumentsService
 	{
 	}
 
-	public async Task<byte[]> GetManual(string language)
+	public async Task<(byte[], string, string)> GetManual(string language)
 	{
-		string selectedFile;
+		string fileName;
 		switch (language)
 		{
 			case "en":
-				selectedFile = "Su-30 EFM Documentation EN.pdf";
+				fileName = "Su-30 EFM Documentation EN.pdf";
 				break;
 			case "ru":
-				selectedFile = "Su-30 EFM Documentation RU.pdf";
+				fileName = "Su-30 EFM Documentation RU.pdf";
 				break;
 			default:
 				throw new Exception("Documentation for this language not found.");
 		}
 
-		string path = Path.Combine(_domainDirectory, "docs", selectedFile);
+		string path = Path.Combine(_domainDirectory, "docs", fileName);
+		string fileType = "application/pdf";
+		byte[] file = await File.ReadAllBytesAsync(path);
 
-		return await File.ReadAllBytesAsync(path);
+		return (file, fileType, fileName);
 	}
 }
