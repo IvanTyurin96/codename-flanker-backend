@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualBasic.FileIO;
-
-namespace CodenameFlanker.Services.Documents;
+﻿namespace CodenameFlanker.Services.Documents;
 
 public sealed class DocumentsService
 {

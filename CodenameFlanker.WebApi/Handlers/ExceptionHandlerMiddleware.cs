@@ -1,6 +1,6 @@
 ﻿namespace CodenameFlanker.WebApi.Handlers;
 
-public class ExceptionHandlerMiddleware
+internal class ExceptionHandlerMiddleware
 {
     private readonly RequestDelegate _next;
     private readonly ILogger<ExceptionHandlerMiddleware> _logger;
