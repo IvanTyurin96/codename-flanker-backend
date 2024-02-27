@@ -6,6 +6,7 @@ namespace CodenameFlanker.WebApi.Controllers;
 [Route("v1/[controller]")]
 public sealed class DocumentsController : ControllerBase
 {
+	private readonly string _domainDirectory = AppDomain.CurrentDomain.BaseDirectory;
 	private readonly DocumentsService _documentsService;
 
 	public DocumentsController(DocumentsService documentsService)
@@ -16,9 +17,11 @@ public sealed class DocumentsController : ControllerBase
 	[HttpGet]
 	[ProducesResponseType(StatusCodes.Status200OK)]
 	[ProducesResponseType(StatusCodes.Status500InternalServerError)]
-	public async Task<IActionResult> Get([FromQuery] string language)
+	public IActionResult Get([FromQuery] string language)
 	{
-		(byte[] file, string fileType, string fileName) = await _documentsService.GetManual(language);
-		return File(file, fileType, fileName);
+		(string fileFolder, string fileType, string fileName) = _documentsService.GetManual(language);
+		string filePath = Path.Combine(_domainDirectory, fileFolder, fileName);
+
+		return PhysicalFile(filePath, fileType, fileName);
 	}
 }

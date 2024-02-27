@@ -4,13 +4,11 @@ namespace CodenameFlanker.Services.Documents;
 
 public sealed class DocumentsService
 {
-	private readonly string _domainDirectory = AppDomain.CurrentDomain.BaseDirectory;
-
 	public DocumentsService()
 	{
 	}
 
-	public async Task<(byte[], string, string)> GetManual(string language)
+	public (string, string, string) GetManual(string language)
 	{
 		string fileName;
 		switch (language)
@@ -25,10 +23,9 @@ public sealed class DocumentsService
 				throw new Exception("Documentation for this language not found.");
 		}
 
-		string path = Path.Combine(_domainDirectory, "docs", fileName);
+		string fileFolder = "docs";
 		string fileType = "application/pdf";
-		byte[] file = await File.ReadAllBytesAsync(path);
 
-		return (file, fileType, fileName);
+		return (fileFolder, fileType, fileName);
 	}
 }
