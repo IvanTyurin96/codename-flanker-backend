@@ -1,23 +1,34 @@
-﻿using CodenameFlanker.Data.Entities;
+﻿using CodenameFlanker.Contracts.Artists.Dto;
 using CodenameFlanker.Data;
+using CodenameFlanker.Data.Entities;
+using CodenameFlanker.Services.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace CodenameFlanker.Services.Artists;
 
 public sealed class ArtistsService
 {
-    private readonly CodenameFlankerDbContext _dbContext;
+	private readonly CodenameFlankerDbContext _dbContext;
+	private readonly string _webRootPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "wwwroot");
 
-    public ArtistsService(CodenameFlankerDbContext dbContext)
+	public ArtistsService(CodenameFlankerDbContext dbContext)
     {
         _dbContext = dbContext;
     }
 
-    public async Task<List<Artist>> GetArtists()
+    public async Task<List<ArtistDto>> GetArtists()
     {
-        List<Artist> artists = await _dbContext.Artists.AsNoTracking()
+        IReadOnlyCollection<Artist> artistsDb = await _dbContext.Artists.AsNoTracking()
             .ToListAsync();
 
-        return artists;
+		List<ArtistDto> artistsDto = new List<ArtistDto>();
+		foreach (var artist in artistsDb)
+		{
+			string base64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artists", artist.Icon));
+			ArtistDto dto = new ArtistDto(artist.Id, artist.Name, artist.Icon, base64, artist.Role);
+			artistsDto.Add(dto);
+		}
+
+		return artistsDto;
     }
 }
