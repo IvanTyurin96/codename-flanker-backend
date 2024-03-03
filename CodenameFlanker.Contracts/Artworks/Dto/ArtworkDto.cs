@@ -8,7 +8,7 @@ public record ArtworkDto
 (
 	int Id,
 	string Name,
-	List<ImageDto> Images,
+	IReadOnlyCollection<ImageDto> Images,
 	ArtistDto Artist,
 	string Description
 );

@@ -1,6 +1,6 @@
 ﻿namespace CodenameFlanker.Contracts.Artworks.Dto;
 
-public record ListedArtworkDto
+public record ArtworkListDto
 (
     int Id,
     string Name,

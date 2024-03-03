@@ -21,13 +21,14 @@ public sealed class ArtistsService
         IReadOnlyCollection<Artist> artistsDb = await _dbContext.Artists.AsNoTracking()
             .ToListAsync();
 
-		List<ArtistDto> artistsDto = new List<ArtistDto>();
-		foreach (var artist in artistsDb)
-		{
-			string base64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artists", artist.Icon));
-			ArtistDto dto = new ArtistDto(artist.Id, artist.Name, artist.Icon, base64, artist.Role);
-			artistsDto.Add(dto);
-		}
+		IReadOnlyCollection<ArtistDto> artistsDto = artistsDb.Select(artist => 
+			new ArtistDto(
+				artist.Id,
+				artist.Name,
+				artist.Icon,
+				ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artists", artist.Icon)),
+				artist.Role))
+			.ToList();
 
 		return artistsDto;
     }
