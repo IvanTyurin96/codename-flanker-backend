@@ -19,17 +19,17 @@ public sealed class ArtworksService
         _dbContext = dbContext;
     }
 
-    public async Task<IReadOnlyCollection<ArtworkListDto>> GetArtworks()
+    public async Task<IReadOnlyCollection<ListedArtworkDto>> GetArtworks()
     {
         IReadOnlyCollection<Artwork> artworksDb = await _dbContext.Artworks.AsNoTracking()
             .ToListAsync();
 
-		List<ArtworkListDto> artworksDto = new List<ArtworkListDto>();
+		List<ListedArtworkDto> artworksDto = new List<ListedArtworkDto>();
 
 		foreach (var artwork in artworksDb)
 		{
 			string base64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artworks", artwork.Thumbnail));
-			ArtworkListDto dto = new ArtworkListDto(artwork.Id, artwork.Name, artwork.Thumbnail, base64, artwork.ArtistId);
+			ListedArtworkDto dto = new ListedArtworkDto(artwork.Id, artwork.Name, artwork.Thumbnail, base64, artwork.ArtistId);
 			artworksDto.Add(dto);
 		}
 
