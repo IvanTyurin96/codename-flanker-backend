@@ -24,20 +24,12 @@ public sealed class ArtworksController : ControllerBase
 
 	[HttpGet]
 	[ProducesResponseType(StatusCodes.Status200OK)]
+	[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 	public async Task<IActionResult> Get()
 	{
-		List<Artwork> artworks = await _artworksService.GetArtworks();
+		List<ListedArtworkDto> artworks = await _artworksService.GetArtworks();
 
-		List<ListedArtworkDto> dtoList = new List<ListedArtworkDto>();
-
-		foreach (var artwork in artworks)
-		{
-			string base64 = ImageBase64Converter.Convert(Path.Combine(_webHostEnvironment.WebRootPath, "artworks", artwork.Thumbnail));
-			ListedArtworkDto dto = new ListedArtworkDto(artwork.Id, artwork.Name, artwork.Thumbnail, base64, artwork.ArtistId);
-			dtoList.Add(dto);
-		}
-
-		return Ok(dtoList);
+		return Ok(artworks);
 	}
 
 	[HttpGet("{id:int:min(1)}")]
