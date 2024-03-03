@@ -5,7 +5,6 @@ using CodenameFlanker.Data;
 using CodenameFlanker.Data.Entities;
 using CodenameFlanker.Services.Helpers;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
 
 namespace CodenameFlanker.Services.Artworks;
 
@@ -22,16 +21,16 @@ public sealed class ArtworksService
     public async Task<IReadOnlyCollection<ListedArtworkDto>> GetArtworks()
     {
         IReadOnlyCollection<Artwork> artworksDb = await _dbContext.Artworks.AsNoTracking()
-            .ToListAsync();
+			.ToListAsync();
 
-		List<ListedArtworkDto> artworksDto = new List<ListedArtworkDto>();
-
-		foreach (var artwork in artworksDb)
-		{
-			string base64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artworks", artwork.Thumbnail));
-			ListedArtworkDto dto = new ListedArtworkDto(artwork.Id, artwork.Name, artwork.Thumbnail, base64, artwork.ArtistId);
-			artworksDto.Add(dto);
-		}
+		IReadOnlyCollection<ListedArtworkDto> artworksDto = artworksDb.Select(artwork => 
+			new ListedArtworkDto(
+				artwork.Id, 
+				artwork.Name, 
+				artwork.Thumbnail,
+				ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artworks", artwork.Thumbnail)), 
+				artwork.ArtistId))
+			.ToList();
 
 		return artworksDto;
     }
