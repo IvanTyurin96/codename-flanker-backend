@@ -1,8 +1,11 @@
-﻿using CodenameFlanker.Contracts.Artworks.Dto;
+﻿using CodenameFlanker.Contracts.Artists.Dto;
+using CodenameFlanker.Contracts.Artworks.Dto;
+using CodenameFlanker.Contracts.Images.Dto;
 using CodenameFlanker.Data;
 using CodenameFlanker.Data.Entities;
 using CodenameFlanker.Services.Helpers;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 namespace CodenameFlanker.Services.Artworks;
 
@@ -33,14 +36,31 @@ public sealed class ArtworksService
 		return artworksDto;
     }
 
-	public async Task<Artwork?> GetArtworkById(int id)
+	public async Task<ArtworkDto> GetArtworkById(int id)
 	{
-		Artwork? artwork = await _dbContext.Artworks.AsNoTracking()
+		Artwork artworkDb = await _dbContext.Artworks.AsNoTracking()
             .Where(x => x.Id == id)
             .Include(x => x.Artist)
             .Include(x => x.Images)
             .FirstOrDefaultAsync();
 
-		return artwork;
+		if (artworkDb == null)
+			throw new Exception();//TO DO
+
+		List<ImageDto> imagesDto = new List<ImageDto>();
+
+		foreach (var image in artworkDb.Images)
+		{
+			string base64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artworks", image.Path));
+			ImageDto dto = new ImageDto(base64, image.Description);
+			imagesDto.Add(dto);
+		}
+
+		string artistBase64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artists", artworkDb.Artist.Icon));
+		ArtistDto artistDto = new ArtistDto(artworkDb.Artist.Id, artworkDb.Artist.Name, artworkDb.Artist.Icon, artistBase64, artworkDb.Artist.Role);
+
+		ArtworkDto artworkDto = new ArtworkDto(artworkDb.Id, artworkDb.Name, imagesDto, artistDto, artworkDb.Description);
+
+		return artworkDto;
 	}
 }

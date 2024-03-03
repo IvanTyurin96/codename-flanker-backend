@@ -1,4 +1,6 @@
-﻿using CodenameFlanker.Data;
+﻿using CodenameFlanker.Contracts.PatchnoteChanges.Dto;
+using CodenameFlanker.Contracts.Patchnotes.Dto;
+using CodenameFlanker.Data;
 using CodenameFlanker.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,13 +15,18 @@ public sealed class PatchnotesService
         _dbContext = dbContext;
     }
 
-    public async Task<List<Patchnote>> GetPatchnotes()
+    public async Task<IReadOnlyCollection<PatchnoteDto>> GetPatchnotes()
     {
-        List<Patchnote> patchnotes = await _dbContext.Patchnotes.AsNoTracking()
+		IReadOnlyCollection<Patchnote> patchnotesDb = await _dbContext.Patchnotes.AsNoTracking()
             .Include(x => x.PatchnoteChanges)
             .OrderByDescending(x => x.Id)
             .ToListAsync();
 
-        return patchnotes;
+		IReadOnlyCollection<PatchnoteDto> patchnotesDto = patchnotesDb.Select(patchnote => 
+            new PatchnoteDto(patchnote.Id, patchnote.Version, patchnote.PatchnoteChanges.Select(change => 
+                new PatchnoteChangeDto(change.Id, change.Name, change.Change, change.PatchnoteId)).ToList()))
+            .ToList();
+
+		return patchnotesDto;
     }
 }

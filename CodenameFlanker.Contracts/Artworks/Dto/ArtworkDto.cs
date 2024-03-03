@@ -1,5 +1,6 @@
 ﻿using CodenameFlanker.Contracts.Artists.Dto;
 using CodenameFlanker.Contracts.Images.Dto;
+using System.Collections.Generic;
 
 namespace CodenameFlanker.Contracts.Artworks.Dto;
 
