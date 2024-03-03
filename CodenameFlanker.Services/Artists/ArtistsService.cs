@@ -16,7 +16,7 @@ public sealed class ArtistsService
         _dbContext = dbContext;
     }
 
-    public async Task<List<ArtistDto>> GetArtists()
+    public async Task<IReadOnlyCollection<ArtistDto>> GetArtists()
     {
         IReadOnlyCollection<Artist> artistsDb = await _dbContext.Artists.AsNoTracking()
             .ToListAsync();

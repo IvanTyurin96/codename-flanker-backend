@@ -19,7 +19,7 @@ public sealed class ArtworksService
         _dbContext = dbContext;
     }
 
-    public async Task<List<ListedArtworkDto>> GetArtworks()
+    public async Task<IReadOnlyCollection<ListedArtworkDto>> GetArtworks()
     {
         IReadOnlyCollection<Artwork> artworksDb = await _dbContext.Artworks.AsNoTracking()
             .ToListAsync();

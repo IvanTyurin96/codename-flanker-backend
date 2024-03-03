@@ -7,5 +7,5 @@ public record PatchnoteDto
 (
 	int Id,
 	string Version,
-	List<PatchnoteChangeDto> PatchnoteChanges
+	IEnumerable<PatchnoteChangeDto> PatchnoteChanges
 );
