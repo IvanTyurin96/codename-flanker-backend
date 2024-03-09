@@ -46,14 +46,11 @@ public sealed class ArtworksService
 		if (artworkDb == null)
 			throw new Exception();//TO DO
 
-		List<ImageDto> imagesDto = new List<ImageDto>();
-
-		foreach (var image in artworkDb.Images)
-		{
-			string base64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artworks", image.Path));
-			ImageDto dto = new ImageDto(base64, image.Description);
-			imagesDto.Add(dto);
-		}
+		IReadOnlyCollection<ImageDto> imagesDto = artworkDb.Images.Select(image =>
+			new ImageDto(
+				ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artworks", image.Path)),
+				image.Description))
+			.ToList();
 
 		string artistBase64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "artists", artworkDb.Artist.Icon));
 		ArtistDto artistDto = new ArtistDto(artworkDb.Artist.Id, artworkDb.Artist.Name, artworkDb.Artist.Icon, artistBase64, artworkDb.Artist.Role);
