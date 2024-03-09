@@ -22,14 +22,15 @@ public sealed class ScreenshotsService
             .OrderBy(x => x.Id)
             .ToListAsync();
 
-		List<ScreenshotDto> screenshotsDto = new List<ScreenshotDto>();
 
-		foreach (var screenshot in screenshotsDb)
-		{
-			string base64 = ImageBase64Converter.Convert(Path.Combine(_webRootPath, "screenshots", screenshot.Thumbnail));
-			ScreenshotDto dto = new ScreenshotDto(screenshot.Id, screenshot.Path, screenshot.Thumbnail, base64);
-			screenshotsDto.Add(dto);
-		}
+		IReadOnlyCollection<ScreenshotDto> screenshotsDto = screenshotsDb.Select(screenshot => 
+			new ScreenshotDto(
+				screenshot.Id,
+				screenshot.Path,
+				screenshot.Thumbnail,
+				ImageBase64Converter.Convert(Path.Combine(_webRootPath, "screenshots", screenshot.Thumbnail))
+				))
+			.ToList();
 
 		return screenshotsDto;
     }
