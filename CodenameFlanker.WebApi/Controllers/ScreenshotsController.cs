@@ -19,7 +19,8 @@ public sealed class ScreenshotsController : ControllerBase
 
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public async Task<IActionResult> Get()
+	[ProducesResponseType(StatusCodes.Status500InternalServerError)]
+	public async Task<IActionResult> Get()
     {
 		List<ScreenshotDto> screenshots = 
             (List<ScreenshotDto>)await _screenshotsService.GetScreenshots();

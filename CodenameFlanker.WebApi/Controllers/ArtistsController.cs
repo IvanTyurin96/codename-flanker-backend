@@ -21,7 +21,8 @@ public sealed class ArtistsController : ControllerBase
 	[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 	public async Task<IActionResult> Get()
     {
-		List<ArtistDto> artists = (List<ArtistDto>)await _artistsService.GetArtists();
+		List<ArtistDto> artists = 
+            (List<ArtistDto>)await _artistsService.GetArtists();
 
         return Ok(artists);
     }
