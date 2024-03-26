@@ -44,7 +44,7 @@ public sealed class ArtworksService
             .FirstOrDefaultAsync();
 
 		if (artworkDb == null)
-			throw new Exception();//TO DO
+			return null;
 
 		IReadOnlyCollection<ImageDto> imagesDto = artworkDb.Images.Select(image =>
 			new ImageDto(

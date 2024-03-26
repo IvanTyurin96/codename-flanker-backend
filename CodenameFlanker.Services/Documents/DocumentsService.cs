@@ -2,10 +2,6 @@
 
 public sealed class DocumentsService
 {
-	public DocumentsService()
-	{
-	}
-
 	public (string, string, string) GetManual(string language)
 	{
 		string fileName;
