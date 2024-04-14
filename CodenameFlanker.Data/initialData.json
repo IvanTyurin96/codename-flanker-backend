@@ -626,6 +626,44 @@
   ],
   "Patchnotes": [
     {
+      "Id": 6,
+      "Version": "2.7.63 Beta",
+      "PatchnoteChanges": [
+        {
+          "Name": "New Features/Additions:",
+          "Change": "- Adjusted Pilots Face\r\n- Reworked most Weapons\r\n- Added R-77PD Missile\r\n- Added possibility to set Bomb Ripple and Time from PS5 for (AG Variants)\r\n- Reworked Taxi/landing Lights"
+        },
+        {
+          "Name": "Bug Fixes:",
+          "Change": "- Fixed RPM gauge not working\r\n- Fixed no switch VDS/ALN on MFD pages\r\n- Fixed debug text showing up when using Radio\r\n- Fixed Brake working without Hydraulics on\r\n- Fixed Thtottle animations in external view\r\n- Fixed number on MKA wing not disapearing after crash\r\n- Fixed wreck not apearing after crash"
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "Version": "2.7.54 Beta",
+      "PatchnoteChanges": [
+        {
+          "Name": "Bug Fixes:",
+          "Change": "- Corrected Formation Light position, Left side\r\n- Corrected Pilot hand Animation for external  Model\r\n- Added Parking Brake\r\n- Added Manual Trim with Stick (Dont know what this means, talk to Freebird xD)\r\n- Removed Custom Radio and returned back to FC3 Radio, until we can find solution to correct comms with AI\r\n- Fixed pilot being headless some times\r\n- Fixed APK-9 not showing radar signal source position in HUD\r\n- Fixed Kh-31P/35A missile not firing\r\n- Fixed RWR Showing no contact\r\n- Fixed No Wheels chalk visible\r\n- Fixed Wheels chalk not effective\r\n- Fixed ADI power off animations\r\n- Fixed CMDS font for Russian text\r\n- Fixed Trim not reset when restart\r\n- Fixed Trim MFD indicator\r\n- Fixed Clock Hour needle not working\r\n- Fixed Fuel probe not reset when restart\r\n- Fixed Clock Hour needle\r\n- Fix Fuel prob not reset when restart\r\n- Fix AC Value indicator on MFWS Page"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Version": "2.7.50 Beta",
+      "PatchnoteChanges": [
+        {
+          "Name": "New Features/Additions:",
+          "Change": "- Changed nozzle behavior logic in Thrust Vector Control to 2D-Canted, similar to real life\r\n- Updated nozzle open and close behavior based on Thrust Vector Control and Angle of Attack\r\n- Resized Vertical Stabilizers of external 3D model to be more realistic\r\n- Reworked behavior under turbulence and crosswind. It may feel too stable. Give feedback and we will adjust more in future\r\n- Added built in Deadzone to rudder input. Pilot input of 15%-100% is mapped into actual input of 0%-100%\r\n- Removed artificial shadow from SM HUD. Updated actual glass texture with increased darkness\r\n- Added new 27EA 3D model thanks to (IVAN)\r\n- Added new external Pilots Face\r\n- Start UP Procedure reworked\r\n- Added Data/Chrono page in PS5\r\n- Added Formation/landing/taxi Light Keyboard bind\r\n- Added animation for Analog Clock\r\n- Added wind heading/velocity m/s in TSD page\r\n- Added Current Time in TSD page\r\n- Added moving Digital ADI for MK in VSD page\r\n- Added ADI Analog Knob calibration\r\n- Reworked Radio edit functionality\r\n- Added Su30 Wreck \r\n- Added 4th skins folder with a few new loading screens"
+        },
+        {
+          "Name": "Bug Fixes:",
+          "Change": "- Fixed Weapon disappearing after jettison\r\n- Fixed loadout names\r\n- Fixed dumb bombs Fab-500 m54 and nuke showing on HUD as FAB-500 M62\r\n- Fixed head not disappearing after ejection\r\n- Fixed Rudder shade error and reworked the top side\r\n- Fixed Cockpit Lamp Light issue\r\n- Fixed Reflection issue\r\n- Fixed Some ground assets without Sound\r\n- Fixed CMDS Dispense delay\r\n- Fixed ADI Analog animation\r\n- Fixed Front Wheel Suspension animation rework\r\n- Fixed Inverted Mirror Side\r\n- Fixed Engine On when restart mission\r\n- Fixed Weapon not working since last DCS update\r\n- Fixed Gear LEV\r\n- Fixed MKM FC3 definition in config\r\n- Fixed Hydraulic arrow in MFD page\r\n- Fixed RWR Alignment\r\n- Fixed Curtain lever\r\n- Fixed Drag Chute reset after Rearming.\r\n- Fixed Stick/throttle movements on external model\r\n- Fixed RPM needle incorrect value"
+        }
+      ]
+    },
+    {
       "Id": 3,
       "Version": "2.1.12 Beta",
       "PatchnoteChanges": [
