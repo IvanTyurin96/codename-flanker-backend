@@ -625,6 +625,20 @@
     }
   ],
   "Patchnotes": [
+      {
+      "Id": 7,
+      "Version": "2.7.72 Beta",
+      "PatchnoteChanges": [
+        {
+          "Name": "New Features/Additions:",
+          "Change": "- Standalone + Multirole DLC(CWS) available as separate download\r\n- Added Auto start procedure\r\n- Added Auto waypoint change\r\n- Added/Corrected Some system keybinds\r\n- R-73 family missiles: the value(longitudinal acceleration of fuse arming) changed.\r\n- RVV-MD2 killdistance increased from 5m to 7m.\r\n- Derby-ER seeker lock distance changed from 15km to 12km.\r\n- Battery life time changed for missiles: R-77-1 = 120s to 110s, RVV-SD = 110s to 100s, R-77M = 190s to 130s, R-77PD = 140s to 110s.\r\n- R-77M DLZ increased."
+        },
+        {
+          "Name": "Bug Fixes:",
+          "Change": "- Fixed some systems bugs\r\n- Fixed some details of external 3D model\r\n- Fixed KH35UE not tracking ships\r\n- Fixed Some bugs on HUD"
+        }
+      ]
+    },
     {
       "Id": 6,
       "Version": "2.7.63 Beta",
