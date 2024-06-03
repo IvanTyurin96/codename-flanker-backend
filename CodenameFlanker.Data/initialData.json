@@ -626,6 +626,20 @@
   ],
   "Patchnotes": [
       {
+      "Id": 8,
+      "Version": "2.7.73 Beta",
+      "PatchnoteChanges": [
+        {
+          "Name": "New Features/Additions:",
+          "Change": "- New Engine behavior. Thrust has been adjusted as well as fuel consumption. Turbine cooling is enabled based on the position of the throttle\r\n- Long awaited revamp of Sideslip force for EFM. Plane will now behave more realistically in bank\r\n- Reworked nozzle open close behavior. It is now more akin to real life\r\n- Added R-37M Hypersonic Air-to-Air missile to Su-30SM\r\n- Updated textures for some weapons"
+        },
+        {
+          "Name": "Bug Fixes:",
+          "Change": "- Fixed CTD due to recent DCS update\r\n- Fixed Ships/Ground unit disappearing\r\n- Fixed some AG Pylons incorrect position"
+        }
+      ]
+    },
+    {
       "Id": 7,
       "Version": "2.7.72 Beta",
       "PatchnoteChanges": [
